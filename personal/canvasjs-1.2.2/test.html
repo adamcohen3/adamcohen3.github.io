@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      theme: "theme1",
+	title:{
+        text: "Location-Identity (Locadentity)",
+
+      },
+       data: [
+      {
+         type: "pie",
+	   toolTipContent: "<strong>% of life:</strong> {pct}",
+       showInLegend: true,
+	 dataPoints: [
+       {  y: 67, pct:"67%", legendText:"NJ", indexLabel: "New Jersey" },
+       {  y: 7, pct:"7%", legendText:"MA", indexLabel: "Boston, MA" },
+       {  y: 20, pct:"20%", legendText:"SB", indexLabel: "Santa Barbara, CA" },
+       {  y: 3, pct:"3%", legendText:"ON" , indexLabel: "London/Toronto, ON"},
+       {  y: 1, pct:"1%", legendText:"JPN", indexLabel: "Tokyo, Japan" },
+       {  y: 2, pct:"2%", legendText:"OTHER" , indexLabel: "Other"},
+       ]
+     }
+     ]
+   });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="canvasjs.min.js"></script>
+  <body>
+   <div id="chartContainer" style="height: 300px; width: 75%; margin:0 auto">
+   </div>
+ </body>
+</html>
