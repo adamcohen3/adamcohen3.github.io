@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2007-2009 McKesson MIG All rights reserved. -->
+<ExportInfo VersionNumber="2">
+<PatientInformation MRN = "9904955 (DEFAULT)" LastName = "Cohen" FirstName = "Adam" MiddleName ="S" Gender ="M" DateOfBirth = "1982-06-02">
+<NumberOfStudies Total = "1">
+<StudyInformation StudyDate = "2019-04-01" StudyTime = "09:21:37" StudyModality = "MR" StudyAccessionNumber = "13012838959" StudyProcedureTypesDescription = "MRI ABD">
+<NumberOfBags Total = "1">
+<BagInformation BagDirectory  = "./data/6332399/w8734454"/>
+</NumberOfBags>
+</StudyInformation>
+</NumberOfStudies>
+</PatientInformation>
+</ExportInfo>
