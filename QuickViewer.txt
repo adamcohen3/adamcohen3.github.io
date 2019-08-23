@@ -1,8 +1,0 @@
-This file is a marker to exhibit current export type.
-The only goal is to prevent mixed export modes on media.
-
-
-If the name of this file:
-
-	AdvancedViewer.txt - the media has only Advanced Viewer (exe module)
-	QuickViewer.txt - the media has Quick (html-based) Viewer, too
