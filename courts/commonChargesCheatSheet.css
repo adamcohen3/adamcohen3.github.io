@@ -6,7 +6,7 @@ body {
   color: #3b3b3b;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background: #ecf0f5;
+  background: #ecf0f5 !important;
 }
 @media screen and (max-width: 580px) {
   body {
