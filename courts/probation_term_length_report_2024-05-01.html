@@ -85,15 +85,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">1</span> Background</a></li>
   <li><a href="#probation-length-before-and-after-2018" id="toc-probation-length-before-and-after-2018" class="nav-link" data-scroll-target="#probation-length-before-and-after-2018"><span class="header-section-number">2</span> Probation length before and after 2018</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><span class="header-section-number">3</span> Limitations</a>
+  <li><a href="#issue-1-data-entry-lag" id="toc-issue-1-data-entry-lag" class="nav-link" data-scroll-target="#issue-1-data-entry-lag"><span class="header-section-number">3</span> Issue 1: data entry lag</a>
   <ul class="collapse">
-  <li><a href="#l1.-pew-report-data-is-skewed-because-of-data-entry-lag" id="toc-l1.-pew-report-data-is-skewed-because-of-data-entry-lag" class="nav-link" data-scroll-target="#l1.-pew-report-data-is-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> L1. Pew report data is skewed because of data entry lag</a></li>
-  <li><a href="#addressing-l1-using-data-that-is-stable-and-relatively-complete" id="toc-addressing-l1-using-data-that-is-stable-and-relatively-complete" class="nav-link" data-scroll-target="#addressing-l1-using-data-that-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Addressing L1: Using data that is stable and relatively complete</a></li>
+  <li><a href="#problem-data-used-in-pew-report-is-skewed-because-of-data-entry-lag" id="toc-problem-data-used-in-pew-report-is-skewed-because-of-data-entry-lag" class="nav-link" data-scroll-target="#problem-data-used-in-pew-report-is-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> Problem: Data used in Pew report is skewed because of data entry lag</a></li>
+  <li><a href="#solution-using-data-that-is-stable-and-relatively-complete" id="toc-solution-using-data-that-is-stable-and-relatively-complete" class="nav-link" data-scroll-target="#solution-using-data-that-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Solution: Using data that is stable and relatively complete</a></li>
   </ul></li>
-  <li><a href="#limitation-2-the-pew-method-estimates-probation-term-length-indirectly" id="toc-limitation-2-the-pew-method-estimates-probation-term-length-indirectly" class="nav-link" data-scroll-target="#limitation-2-the-pew-method-estimates-probation-term-length-indirectly"><span class="header-section-number">4</span> Limitation #2: The Pew method estimates probation term length indirectly</a></li>
-  <li><a href="#fix-2-using-a-direct-method-to-estimate-probation-term-length" id="toc-fix-2-using-a-direct-method-to-estimate-probation-term-length" class="nav-link" data-scroll-target="#fix-2-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">5</span> Fix #2: Using a direct method to estimate probation term length</a></li>
-  <li><a href="#limitation-3-the-pew-method-aggregates-felony-and-non-felony-probationers" id="toc-limitation-3-the-pew-method-aggregates-felony-and-non-felony-probationers" class="nav-link" data-scroll-target="#limitation-3-the-pew-method-aggregates-felony-and-non-felony-probationers"><span class="header-section-number">6</span> Limitation #3: The Pew method aggregates felony and non-felony probationers</a></li>
-  <li><a href="#fix-3-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" id="toc-fix-3-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="nav-link" data-scroll-target="#fix-3-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">7</span> Fix #3: Disaggregating felony and non-felony using a direct method and stable data</a></li>
+  <li><a href="#issue-2-probation-length-calculated-indirectly" id="toc-issue-2-probation-length-calculated-indirectly" class="nav-link" data-scroll-target="#issue-2-probation-length-calculated-indirectly"><span class="header-section-number">4</span> Issue 2: Probation length calculated indirectly</a>
+  <ul class="collapse">
+  <li><a href="#problem-the-pew-method-estimates-probation-term-length-indirectly-and-validity-of-the-method-depends-on-assumptions-that-may-have-been-violated" id="toc-problem-the-pew-method-estimates-probation-term-length-indirectly-and-validity-of-the-method-depends-on-assumptions-that-may-have-been-violated" class="nav-link" data-scroll-target="#problem-the-pew-method-estimates-probation-term-length-indirectly-and-validity-of-the-method-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">4.1</span> Problem: The Pew method estimates probation term length indirectly and validity of the method depends on assumptions that may have been violated</a></li>
+  <li><a href="#solution-using-a-direct-method-to-estimate-probation-term-length" id="toc-solution-using-a-direct-method-to-estimate-probation-term-length" class="nav-link" data-scroll-target="#solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">4.2</span> Solution: Using a direct method to estimate probation term length</a></li>
+  </ul></li>
+  <li><a href="#issue-3-the-pew-method-aggregates-felony-and-non-felony-probationers" id="toc-issue-3-the-pew-method-aggregates-felony-and-non-felony-probationers" class="nav-link" data-scroll-target="#issue-3-the-pew-method-aggregates-felony-and-non-felony-probationers"><span class="header-section-number">5</span> Issue 3: The Pew method aggregates felony and non-felony probationers</a>
+  <ul class="collapse">
+  <li><a href="#problem-the-mean-of-data-that-is-bimodal-containing-two-mostly-non-overlapping-groups-is-often-meaningless" id="toc-problem-the-mean-of-data-that-is-bimodal-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="nav-link" data-scroll-target="#problem-the-mean-of-data-that-is-bimodal-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">5.1</span> Problem: The mean of data that is bimodal (containing two mostly non-overlapping groups) is often meaningless</a></li>
+  </ul></li>
+  <li><a href="#solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" id="toc-solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="nav-link" data-scroll-target="#solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">6</span> Solution: Disaggregating felony and non-felony using a direct method and stable data</a></li>
   </ul>
 </nav>
 </div>
@@ -210,15 +216,15 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 </div>
 <p>The estimated probation length in 2018 appears to represent a peak using BJS survey data.</p>
 </section>
-<section id="limitations" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="limitations"><span class="header-section-number">3</span> Limitations</h2>
-<section id="l1.-pew-report-data-is-skewed-because-of-data-entry-lag" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="l1.-pew-report-data-is-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> L1. Pew report data is skewed because of data entry lag</h3>
+<section id="issue-1-data-entry-lag" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="issue-1-data-entry-lag"><span class="header-section-number">3</span> Issue 1: data entry lag</h2>
+<section id="problem-data-used-in-pew-report-is-skewed-because-of-data-entry-lag" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="problem-data-used-in-pew-report-is-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> Problem: Data used in Pew report is skewed because of data entry lag</h3>
 <p>As of April 2024, there appears to be significant data entry lag in Caseload Explorer, the case management system used by probation at the Hawaii State Judiciary. Data entry does not appear to be “stable” until 12-24 months after the end of a calendar year.</p>
 <p>This was discovered when trying to re-analyze probation term lengths and discovering that the number of exits, or terminations, in a given year depends on when the analysis is run. When it is run a few months after the end of a calendar year, as it is typically done for the BJS Annual Probation Survey, there are typically 1000 to 2000 fewer terminations compared to when it is run 24 or more months later (not including 2022 or 2023, which are too recent to compare).</p>
 </section>
-<section id="addressing-l1-using-data-that-is-stable-and-relatively-complete" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="addressing-l1-using-data-that-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Addressing L1: Using data that is stable and relatively complete</h3>
+<section id="solution-using-data-that-is-stable-and-relatively-complete" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="solution-using-data-that-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Solution: Using data that is stable and relatively complete</h3>
 <p>To address this, the indirect method was used again but with data extracted from Caseload Explorer in April 2024. For all years except 2022 and 2023, this allowed at least 24 months after the close of the year for probation officers to complete data entry.</p>
 <div class="cell">
 <details>
@@ -299,12 +305,14 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 <p>As can be seen by the <span style="color:darkorange;">orange line</span>, the estimated probation term length appears to drop by at least 12 months if not more for years 2012-2021. Although less time has passed, there also appears to be a decrease by 4-5 months for 2022 and 2023. This suggests that probation term lengths in Hawaii may be lower than originally reported, even for the peak year of 2018.</p>
 </section>
 </section>
-<section id="limitation-2-the-pew-method-estimates-probation-term-length-indirectly" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="limitation-2-the-pew-method-estimates-probation-term-length-indirectly"><span class="header-section-number">4</span> Limitation #2: The Pew method estimates probation term length indirectly</h2>
+<section id="issue-2-probation-length-calculated-indirectly" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="issue-2-probation-length-calculated-indirectly"><span class="header-section-number">4</span> Issue 2: Probation length calculated indirectly</h2>
+<section id="problem-the-pew-method-estimates-probation-term-length-indirectly-and-validity-of-the-method-depends-on-assumptions-that-may-have-been-violated" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="problem-the-pew-method-estimates-probation-term-length-indirectly-and-validity-of-the-method-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">4.1</span> Problem: The Pew method estimates probation term length indirectly and validity of the method depends on assumptions that may have been violated</h3>
 <p>Pew did not have access to individual case data, requiring them to use a method that allowed them to estimate probation term length indirectly using estimates of probation population size and number of exits. How does probation term length change, if at all, when using a direct approach that relies on calculating probation term length at the individual case level and averaging across cases?</p>
 </section>
-<section id="fix-2-using-a-direct-method-to-estimate-probation-term-length" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="fix-2-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">5</span> Fix #2: Using a direct method to estimate probation term length</h2>
+<section id="solution-using-a-direct-method-to-estimate-probation-term-length" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">4.2</span> Solution: Using a direct method to estimate probation term length</h3>
 <p>For each probationer, a probation term length was calculated by taking the difference between the start and termination of their probation term. <em>This calculation is not based on how long they were ordered to serve by a judge but by how long they actually served.</em> Each supervision case was assigned to a calendar year based on the year of the case termination. All of the individual term lengths that were grouped in a given year where then averaged to get an estimate of probation term length.</p>
 <p><span class="math display">\[probationer.term.length = probation.end.date - probation.start.date\]</span> <span class="math display">\[ estimated.probation.term.length_{year} = \frac{1}{n} \sum_{i = 1}^n({probation.end.date_{i,year} - probation.start.date_{i,year}})\]</span> Where i is an individual probationer, n is the total number of probationers in a cohort, and year is a calendar year.</p>
 <p>Individual case data was pulled from CX, the database underlying Caseload Explorer.</p>
@@ -691,8 +699,11 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 </div>
 <p>The direct method with new data and the indirect method with new data yield similar, though not identical, results, both suggesting estimated probation term lengths are lower compared to those estimates using an indirect method with data suffering from data entry lag.</p>
 </section>
-<section id="limitation-3-the-pew-method-aggregates-felony-and-non-felony-probationers" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="limitation-3-the-pew-method-aggregates-felony-and-non-felony-probationers"><span class="header-section-number">6</span> Limitation #3: The Pew method aggregates felony and non-felony probationers</h2>
+</section>
+<section id="issue-3-the-pew-method-aggregates-felony-and-non-felony-probationers" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="issue-3-the-pew-method-aggregates-felony-and-non-felony-probationers"><span class="header-section-number">5</span> Issue 3: The Pew method aggregates felony and non-felony probationers</h2>
+<section id="problem-the-mean-of-data-that-is-bimodal-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="problem-the-mean-of-data-that-is-bimodal-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">5.1</span> Problem: The mean of data that is bimodal (containing two mostly non-overlapping groups) is often meaningless</h3>
 <p>Consider a room filled with 100 government workers and 100 tech industry multi-millionaires The average salary in the room ends up not representing anyone.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -701,8 +712,9 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 </div>
 <p>The probation term lengths for felony and misdemeanor probationers are like salaries in this example. Felony and misdemeanor probationers are in effect two different sub-populations with distinct distributions for term length, and conceptually, mixing them and taking an average can produce a distorted representation of probation term length. When there are two sub-groups in a dataset, it is often conceptually clearer to disaggregate the data by group and compute separate means for each.</p>
 </section>
-<section id="fix-3-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="fix-3-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">7</span> Fix #3: Disaggregating felony and non-felony using a direct method and stable data</h2>
+</section>
+<section id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">6</span> Solution: Disaggregating felony and non-felony using a direct method and stable data</h2>
 <p>Disaggregating data by offense severity yields the following results:</p>
 <div class="cell">
 <details>
@@ -779,16 +791,17 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 <span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> prob_data_degree_coarse_stats <span class="sc">%&gt;%</span> <span class="fu">filter</span>(offense_F_MD <span class="sc">==</span> <span class="st">"MD-PM"</span>), <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> est_prob_term_length_mo), <span class="at">color =</span> <span class="st">"gray47"</span>) <span class="sc">+</span></span>
 <span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> exits), <span class="at">pch =</span> <span class="dv">21</span>) <span class="sc">+</span></span>
 <span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">name =</span> <span class="st">"Offense Degree"</span>, </span>
-<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>                     <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"darkorange"</span>, <span class="st">"gold"</span>, <span class="st">"cyan"</span>, <span class="st">"dodgerblue"</span>, <span class="st">"gray90"</span>) <span class="co">#set colors manually</span></span>
-<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># breaks = c("CE_BJS_survey", "CE_2024", "CX_2024"), #control the order of the labels</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># labels = c("Pew Method with old BJS data", "Pew Method with new CE data", "Direct method with new CX data") #customize labels</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>)</span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Hawaii Probation Term Lengths Across Time"</span>) <span class="sc">+</span></span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NULL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="st">"Estimated Probation Term Length (months)"</span>) <span class="sc">+</span></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">name =</span> <span class="st">"Offense Degree"</span>, </span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>                     <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"darkorange"</span>, <span class="st">"gold"</span>, <span class="st">"cyan"</span>, <span class="st">"dodgerblue"</span>, <span class="st">"gray90"</span>) <span class="co">#set colors manually</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># breaks = c("CE_BJS_survey", "CE_2024", "CX_2024"), #control the order of the labels</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># labels = c("Pew Method with old BJS data", "Pew Method with new CE data", "Direct method with new CX data") #customize labels</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>)</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Hawaii Probation Term Lengths Across Time"</span>) <span class="sc">+</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NULL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="probation_term_length_report_2024-05-01_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="768"></p>
