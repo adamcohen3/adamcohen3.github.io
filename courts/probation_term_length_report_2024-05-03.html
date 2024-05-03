@@ -103,6 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">6</span> Summary</a>
   <ul class="collapse">
   <li><a href="#outstanding-issues" id="toc-outstanding-issues" class="nav-link" data-scroll-target="#outstanding-issues"><span class="header-section-number">6.1</span> Outstanding issues</a></li>
+  <li><a href="#implications-for-early-termination-study" id="toc-implications-for-early-termination-study" class="nav-link" data-scroll-target="#implications-for-early-termination-study"><span class="header-section-number">6.2</span> Implications for early termination study</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -138,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
-    <p>How long are probation term lengths in Hawaii? <a href="https://www.pewtrusts.org/en/research-and-analysis/reports/2020/12/states-can-shorten-probation-and-protect-public-safety">Past estimates</a> report 58.9 months, the longest of any state in the US. But this analysis was limited to a single year, relied on an “indirect” approximation method to compute probation term length, and suffered from at least one serious data quality issue that likely inflated estimates. To address these limitations, a more complete profile of probation term length is provided by looking over a 12 year window while addressing previous data quality issues. The new estimates converge when using the “indirect” method and a direct approach that relies on case-level data. Even when these limitations are addressed, estimates of probation term length are still misleading as they lump felony and non-felony cases, which are mostly non-overlapping subpopulations. To provide a more conceptually meaningful estimate of probation term length, estimates are disaggregated by offense degree.</p>
+    <p>How long are probation term lengths in Hawaii? According to a <a href="https://www.pewtrusts.org/en/research-and-analysis/reports/2020/12/states-can-shorten-probation-and-protect-public-safety">report by Pew</a>, the average probation term length is 58.9 months, the longest of any state in the US. But this analysis was limited to a single year, relied on an “indirect” approximation method, and suffered from at least one serious data quality issue that likely inflated estimates. To address these limitations, probation term length was estimated over a 12 year window with higher quality data, providing a more complete and accurate profile. Results show that <em>probation term lengths range from 29.7 to 38.4 months</em>. The new estimates converge when using the “indirect” method and a direct approach that relies on case-level data. Even when these limitations are addressed, estimates of probation term length are still misleading as they lump felony and non-felony cases, which are mostly non-overlapping subpopulations. To provide a more conceptually meaningful estimate of probation term length, estimates were disaggregated by offense degree, yielding <em>15.4 to 34.2 months for misdemeanants</em> and <em>52.9 to 69.4 months for felons</em> between 2012 and 2023. Limitations of the data and implications for shortening probation are discussed.</p>
   </div>
 </div>
 
@@ -227,7 +228,7 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 <div id="fig-pew2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="probation_term_length_report_2024-05-03_files/figure-html/fig-pew2-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Probation length by year</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;2: Probation length by year. Data initially reported by Pew for 2000 and 2018 are in blue, with the national average in red.</figcaption>
 </figure>
 </div>
 </div>
@@ -865,7 +866,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 </section>
 <section id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="level3 page-columns page-full" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">5.2</span> Solution: Disaggregating felony and non-felony using a direct method and stable data</h3>
-<p>First, here is the distribution of probation term lengths, disaggregated by offense degree and year. Note the empirical support for mostly non-overlapping distributions across years.</p>
+<p>First, here is the distribution of probation term lengths, disaggregated by offense degree and year. Note the empirical support for mostly non-overlapping distributions for felony and misdemeanor probation term lengths across years.</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -1000,7 +1001,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
 <span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="st">"Estimated Probation Term Length (months)"</span>, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>)) <span class="sc">+</span></span>
 <span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">name =</span> <span class="st">"Offense Degree"</span>, </span>
-<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>                     <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"gray47"</span>, <span class="st">"gray90"</span>) <span class="co">#set colors manually</span></span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>                     <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkred"</span>,<span class="st">"darkblue"</span>, <span class="st">"gray90"</span>) <span class="co">#set colors manually</span></span>
 <span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># breaks = c("CE_BJS_survey", "CE_2024", "CX_2024"), #control the order of the labels</span></span>
 <span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>                     <span class="co"># labels = c("Pew Method with old BJS data", "Pew Method with new CE data", "Direct method with new CX data") #customize labels</span></span>
 <span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
@@ -1043,10 +1044,22 @@ Expand to learn more about data entry lag in Caseload Explorer
 <p>UNDER CONSTRUCTION!</p>
 <section id="outstanding-issues" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="outstanding-issues"><span class="header-section-number">6.1</span> Outstanding issues</h3>
-<section id="size-on-year-end-probation-population" class="level4" data-number="6.1.1">
-<h4 data-number="6.1.1" class="anchored" data-anchor-id="size-on-year-end-probation-population"><span class="header-section-number">6.1.1</span> Size on year-end probation population</h4>
+<section id="unexplained-fluctuation-in-size-of-year-end-probation-population" class="level4" data-number="6.1.1">
+<h4 data-number="6.1.1" class="anchored" data-anchor-id="unexplained-fluctuation-in-size-of-year-end-probation-population"><span class="header-section-number">6.1.1</span> Unexplained fluctuation in size of year-end probation population</h4>
 <p>UNDER CONSTRUCTION!</p>
 </section>
+<section id="remaining-data-quality-issues-positive-and-negative-outliar-term-lengths" class="level4" data-number="6.1.2">
+<h4 data-number="6.1.2" class="anchored" data-anchor-id="remaining-data-quality-issues-positive-and-negative-outliar-term-lengths"><span class="header-section-number">6.1.2</span> Remaining data quality issues: positive and negative outliar term lengths</h4>
+<p>UNDER CONSTRUCTION!</p>
+</section>
+<section id="high-percentage-of-felony-probationers-relative-to-other-jurisdictions" class="level4" data-number="6.1.3">
+<h4 data-number="6.1.3" class="anchored" data-anchor-id="high-percentage-of-felony-probationers-relative-to-other-jurisdictions"><span class="header-section-number">6.1.3</span> High percentage of felony probationers relative to other jurisdictions</h4>
+<p>UNDER CONSTRUCTION!</p>
+</section>
+</section>
+<section id="implications-for-early-termination-study" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="implications-for-early-termination-study"><span class="header-section-number">6.2</span> Implications for early termination study</h3>
+<p>UNDER CONSTRUCTION!</p>
 </section>
 </section>
 
