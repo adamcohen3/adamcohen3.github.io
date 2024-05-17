@@ -425,7 +425,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <h3 data-number="3.2" class="anchored" data-anchor-id="calculating-probation-length-directly"><span class="header-section-number">3.2</span> Calculating probation length directly</h3>
 <section id="problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated" class="level4" data-number="3.2.1">
 <h4 data-number="3.2.1" class="anchored" data-anchor-id="problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">3.2.1</span> Problem: The validity of the indirect method depends on assumptions that may have been violated</h4>
-<p>Without access to individual case-level data, Pew estimated probation term length indirectly using start and end probation population size and number of exits for a given year. This method should deliver valid estimates so long as certain assumptions are met, including that the probation population is stable over time. But the population of probationers in Hawaii has changed more or less sharply, depending on the year.</p>
+<p>Without access to individual case-level data, Pew estimated probation term length indirectly using start and end probation population size and number of exits for a given year (<a href="#probation-length-before-and-after-2018">Section 2</a>). This method should deliver valid estimates so long as certain assumptions are met, including that the probation population is stable over time. But the population of probationers in Hawaii has changed more or less sharply, depending on the year.</p>
 <div class="cell tbl-cap-location-bottom">
 <details>
 <summary>Show the code</summary>
@@ -531,7 +531,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <section id="solution-using-a-direct-method-to-estimate-probation-term-length" class="level4" data-number="3.2.2">
 <h4 data-number="3.2.2" class="anchored" data-anchor-id="solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">3.2.2</span> Solution: Using a direct method to estimate probation term length</h4>
 <p>For each probationer, a probation term length was calculated by taking the difference between the start date and termination date of their probation term.</p>
-<p><span class="math display">\[probationer.term.length = probation.terminate.date - probation.start.date\]</span> <strong><em>This calculation is not based on how long they were ordered to serve by a judge but by how long they actually served.</em></strong></p>
+<p><span class="math display">\[probationer.term.length = probation.terminate.date - probation.start.date\]</span> <strong><em>This calculation is not based on how long probationers were ordered to serve by a judge but by how long they actually served.</em></strong></p>
 <p>Each supervision case was assigned to a calendar year based on the year of the termination date. The individual term lengths for cases grouped in a given year were then averaged to get an estimate of probation term length for that year.</p>
 <p><span class="math display">\[ probation.term.length_{year} = \frac{1}{n} \sum_{i = 1}^n({probation.terminate.date_{i,year} - probation.start.date_{i,year}})\]</span> Where <em>i</em> is an individual probationer, <em>n</em> is the total number of probationers in a cohort, and <em>year</em> is a calendar year.</p>
 <p>Individual case data was pulled from CX, the database underlying Caseload Explorer.</p>
@@ -988,13 +988,16 @@ Expand to learn more about data entry lag in Caseload Explorer
 </div>
 </div>
 </div>
-<p>This is consistent with <strong>HRS §706-623 Terms of probation.</strong> (1) <em>[Repeal and reenactment on June 30, 2026. L 2020, c 19, §15.]</em> When the court has sentenced a defendant to be placed on probation, the period of probation shall be as follows, unless the court enters the reason therefor on the record and sentences the defendant to a shorter period of probation:</p>
-<ol type="a">
-<li><p>Ten years upon conviction of a class A felony;</p></li>
-<li><p>Five years upon conviction of a class B or class C felony under part II, V, or VI of chapter 707, chapter 709, and part I of chapter 712 and four years upon conviction of any other class B or C felony;</p></li>
-<li><p>One year upon conviction of a misdemeanor; except that upon a conviction under section 586-4, 586-11, or 709-906, the court may sentence the defendant to a period of probation not exceeding two years; or</p></li>
-<li><p>Six months upon conviction of a petty misdemeanor; provided that up to one year may be imposed upon a finding of good cause; except upon a conviction under section 709-906, the court may sentence the defendant to a period of probation not exceeding one year.</p></li>
+<p>This is consistent with <strong>HRS §706-623 Terms of probation.</strong></p>
+<blockquote class="blockquote">
+<ol type="1">
+<li><em>[Repeal and reenactment on June 30, 2026. L 2020, c 19, §15.]</em> When the court has sentenced a defendant to be placed on probation, the period of probation shall be as follows, unless the court enters the reason therefor on the record and sentences the defendant to a shorter period of probation:</li>
 </ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) Ten years upon conviction of a class A felony;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Five years upon conviction of a class B or class C felony under part II, V, or VI of chapter 707, chapter 709, and part I of chapter 712 and four years upon conviction of any other class B or C felony;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) One year upon conviction of a misdemeanor; except that upon a conviction under section 586-4, 586-11, or 709-906, the court may sentence the defendant to a period of probation not exceeding two years; or</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d) Six months upon conviction of a petty misdemeanor; provided that up to one year may be imposed upon a finding of good cause; except upon a conviction under section 709-906, the court may sentence the defendant to a period of probation not exceeding one year.</p>
+</blockquote>
 <p>Next, here is probation term length as a function of year. The graph on the left breaks down offense severity into FA, FB, FC, MD, PM, and other. The plot on the right lumps all felonies together and all MD and PM together.</p>
 <div class="page-columns page-full">
 <details>
