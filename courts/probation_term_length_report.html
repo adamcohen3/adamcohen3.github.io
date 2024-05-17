@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Adam S. Cohen">
-<meta name="dcterms.date" content="2024-05-01">
+<meta name="dcterms.date" content="2024-05-16">
 
-<title>Probation Term Lengths in Hawai’i</title>
+<title>Re-estimating Probation Term Lengths in Hawai’i</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,19 +59,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="probation_term_length_report_2024-05-06_files/libs/clipboard/clipboard.min.js"></script>
-<script src="probation_term_length_report_2024-05-06_files/libs/quarto-html/quarto.js"></script>
-<script src="probation_term_length_report_2024-05-06_files/libs/quarto-html/popper.min.js"></script>
-<script src="probation_term_length_report_2024-05-06_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="probation_term_length_report_2024-05-06_files/libs/quarto-html/anchor.min.js"></script>
-<link href="probation_term_length_report_2024-05-06_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="probation_term_length_report_2024-05-06_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="probation_term_length_report_2024-05-06_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="probation_term_length_report_2024-05-06_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="probation_term_length_report_2024-05-06_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="probation_term_length_report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="probation_term_length_report_files/libs/quarto-html/quarto.js"></script>
+<script src="probation_term_length_report_files/libs/quarto-html/popper.min.js"></script>
+<script src="probation_term_length_report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="probation_term_length_report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="probation_term_length_report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="probation_term_length_report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="probation_term_length_report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="probation_term_length_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="probation_term_length_report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-<script src="probation_term_length_report_2024-05-06_files/libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="probation_term_length_report_2024-05-06_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="probation_term_length_report_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="probation_term_length_report_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -82,36 +82,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">1</span> Background</a></li>
   <li><a href="#probation-length-before-and-after-2018" id="toc-probation-length-before-and-after-2018" class="nav-link" data-scroll-target="#probation-length-before-and-after-2018"><span class="header-section-number">2</span> Probation length before and after 2018</a></li>
-  <li><a href="#issue-1-lagging-data-entry" id="toc-issue-1-lagging-data-entry" class="nav-link" data-scroll-target="#issue-1-lagging-data-entry"><span class="header-section-number">3</span> Issue 1: Lagging data entry</a>
+  <li><a href="#re-estimating-probation-term-lengths" id="toc-re-estimating-probation-term-lengths" class="nav-link" data-scroll-target="#re-estimating-probation-term-lengths"><span class="header-section-number">3</span> Re-estimating probation term lengths</a>
   <ul>
-  <li><a href="#problem-pew-data-skewed-because-of-data-entry-lag" id="toc-problem-pew-data-skewed-because-of-data-entry-lag" class="nav-link" data-scroll-target="#problem-pew-data-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> Problem: Pew data skewed because of data entry lag</a></li>
-  <li><a href="#solution-using-data-when-it-is-stable-and-relatively-complete" id="toc-solution-using-data-when-it-is-stable-and-relatively-complete" class="nav-link" data-scroll-target="#solution-using-data-when-it-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Solution: Using data when it is stable and relatively complete</a></li>
-  </ul></li>
-  <li><a href="#issue-2-indirectly-calculating-probation-length" id="toc-issue-2-indirectly-calculating-probation-length" class="nav-link" data-scroll-target="#issue-2-indirectly-calculating-probation-length"><span class="header-section-number">4</span> Issue 2: Indirectly calculating probation length</a>
-  <ul>
-  <li><a href="#problem-the-validity-of-the-indirect-method-used-by-pew-depends-on-assumptions-that-may-have-been-violated" id="toc-problem-the-validity-of-the-indirect-method-used-by-pew-depends-on-assumptions-that-may-have-been-violated" class="nav-link" data-scroll-target="#problem-the-validity-of-the-indirect-method-used-by-pew-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">4.1</span> Problem: The validity of the indirect method used by Pew depends on assumptions that may have been violated</a></li>
-  <li><a href="#solution-using-a-direct-method-to-estimate-probation-term-length" id="toc-solution-using-a-direct-method-to-estimate-probation-term-length" class="nav-link" data-scroll-target="#solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">4.2</span> Solution: Using a direct method to estimate probation term length</a></li>
-  </ul></li>
-  <li><a href="#issue-3-aggregating-felony-and-non-felony-probationers" id="toc-issue-3-aggregating-felony-and-non-felony-probationers" class="nav-link" data-scroll-target="#issue-3-aggregating-felony-and-non-felony-probationers"><span class="header-section-number">5</span> Issue 3: Aggregating felony and non-felony probationers</a>
-  <ul>
-  <li><a href="#problem-the-pew-report-aggregates-felony-and-non-felony-probationers-but-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" id="toc-problem-the-pew-report-aggregates-felony-and-non-felony-probationers-but-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="nav-link" data-scroll-target="#problem-the-pew-report-aggregates-felony-and-non-felony-probationers-but-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">5.1</span> Problem: The Pew report aggregates felony and non-felony probationers, but the mean of data containing two (mostly) non-overlapping groups is often meaningless</a></li>
-  <li><a href="#solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" id="toc-solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="nav-link" data-scroll-target="#solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">5.2</span> Solution: Disaggregating felony and non-felony using a direct method and stable data</a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">6</span> Summary</a>
-  <ul>
-  <li><a href="#outstanding-issues" id="toc-outstanding-issues" class="nav-link" data-scroll-target="#outstanding-issues"><span class="header-section-number">6.1</span> Outstanding issues</a>
+  <li><a href="#using-complete-and-stable-data" id="toc-using-complete-and-stable-data" class="nav-link" data-scroll-target="#using-complete-and-stable-data"><span class="header-section-number">3.1</span> Using complete and stable data</a>
   <ul class="collapse">
-  <li><a href="#unexplained-fluctuation-in-size-of-year-end-probation-population" id="toc-unexplained-fluctuation-in-size-of-year-end-probation-population" class="nav-link" data-scroll-target="#unexplained-fluctuation-in-size-of-year-end-probation-population"><span class="header-section-number">6.1.1</span> Unexplained fluctuation in size of year-end probation population</a></li>
-  <li><a href="#remaining-data-quality-issues-positive-and-negative-outliar-term-lengths" id="toc-remaining-data-quality-issues-positive-and-negative-outliar-term-lengths" class="nav-link" data-scroll-target="#remaining-data-quality-issues-positive-and-negative-outliar-term-lengths"><span class="header-section-number">6.1.2</span> Remaining data quality issues: positive and negative outliar term lengths</a></li>
-  <li><a href="#hi-has-a-high-percentage-of-felony-probationers-relative-to-other-jurisdictions" id="toc-hi-has-a-high-percentage-of-felony-probationers-relative-to-other-jurisdictions" class="nav-link" data-scroll-target="#hi-has-a-high-percentage-of-felony-probationers-relative-to-other-jurisdictions"><span class="header-section-number">6.1.3</span> HI has a high percentage of felony probationers relative to other jurisdictions</a></li>
+  <li><a href="#problem-previous-data-was-skewed-because-of-data-entry-lag" id="toc-problem-previous-data-was-skewed-because-of-data-entry-lag" class="nav-link" data-scroll-target="#problem-previous-data-was-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1.1</span> Problem: Previous data was skewed because of data entry lag</a></li>
+  <li><a href="#solution-using-data-when-it-is-stable-and-relatively-complete" id="toc-solution-using-data-when-it-is-stable-and-relatively-complete" class="nav-link" data-scroll-target="#solution-using-data-when-it-is-stable-and-relatively-complete"><span class="header-section-number">3.1.2</span> Solution: Using data when it is stable and relatively complete</a></li>
   </ul></li>
-  <li><a href="#implications-for-early-termination-study" id="toc-implications-for-early-termination-study" class="nav-link" data-scroll-target="#implications-for-early-termination-study"><span class="header-section-number">6.2</span> Implications for early termination study</a></li>
+  <li><a href="#calculating-probation-length-directly" id="toc-calculating-probation-length-directly" class="nav-link" data-scroll-target="#calculating-probation-length-directly"><span class="header-section-number">3.2</span> Calculating probation length directly</a>
+  <ul class="collapse">
+  <li><a href="#problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated" id="toc-problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated" class="nav-link" data-scroll-target="#problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">3.2.1</span> Problem: The validity of the indirect method depends on assumptions that may have been violated</a></li>
+  <li><a href="#solution-using-a-direct-method-to-estimate-probation-term-length" id="toc-solution-using-a-direct-method-to-estimate-probation-term-length" class="nav-link" data-scroll-target="#solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">3.2.2</span> Solution: Using a direct method to estimate probation term length</a></li>
+  </ul></li>
+  <li><a href="#disaggregating-felony-and-non-felony-probationers" id="toc-disaggregating-felony-and-non-felony-probationers" class="nav-link" data-scroll-target="#disaggregating-felony-and-non-felony-probationers"><span class="header-section-number">3.3</span> Disaggregating felony and non-felony probationers</a>
+  <ul class="collapse">
+  <li><a href="#problem-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" id="toc-problem-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="nav-link" data-scroll-target="#problem-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">3.3.1</span> Problem: The mean of data containing two (mostly) non-overlapping groups is often meaningless</a></li>
+  <li><a href="#solution-disaggregating-felony-and-non-felony-probationers" id="toc-solution-disaggregating-felony-and-non-felony-probationers" class="nav-link" data-scroll-target="#solution-disaggregating-felony-and-non-felony-probationers"><span class="header-section-number">3.3.2</span> Solution: Disaggregating felony and non-felony probationers</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4</span> Summary</a>
+  <ul>
+  <li><a href="#remaining-data-quality-issues" id="toc-remaining-data-quality-issues" class="nav-link" data-scroll-target="#remaining-data-quality-issues"><span class="header-section-number">4.1</span> Remaining data quality issues</a>
+  <ul class="collapse">
+  <li><a href="#unexplained-decrease-in-size-of-year-end-probation-population" id="toc-unexplained-decrease-in-size-of-year-end-probation-population" class="nav-link" data-scroll-target="#unexplained-decrease-in-size-of-year-end-probation-population"><span class="header-section-number">4.1.1</span> Unexplained decrease in size of year-end probation population</a></li>
+  <li><a href="#negative-zero-and-extreme-term-lengths" id="toc-negative-zero-and-extreme-term-lengths" class="nav-link" data-scroll-target="#negative-zero-and-extreme-term-lengths"><span class="header-section-number">4.1.2</span> Negative, zero, and extreme term lengths</a></li>
+  </ul></li>
+  <li><a href="#hawaii-is-a-high-probation-low-incarceration-state" id="toc-hawaii-is-a-high-probation-low-incarceration-state" class="nav-link" data-scroll-target="#hawaii-is-a-high-probation-low-incarceration-state"><span class="header-section-number">4.2</span> Hawaii is a high-probation, low-incarceration state</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations"><span class="header-section-number">4.3</span> Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#timely-data-entry-and-timing-of-reports" id="toc-timely-data-entry-and-timing-of-reports" class="nav-link" data-scroll-target="#timely-data-entry-and-timing-of-reports"><span class="header-section-number">4.3.1</span> Timely data entry and timing of reports</a></li>
+  <li><a href="#investigating-cases-with-unusual-term-lengths" id="toc-investigating-cases-with-unusual-term-lengths" class="nav-link" data-scroll-target="#investigating-cases-with-unusual-term-lengths"><span class="header-section-number">4.3.2</span> Investigating cases with unusual term lengths</a></li>
+  <li><a href="#studying-the-impact-of-early-termination-from-probation" id="toc-studying-the-impact-of-early-termination-from-probation" class="nav-link" data-scroll-target="#studying-the-impact-of-early-termination-from-probation"><span class="header-section-number">4.3.3</span> Studying the impact of early termination from probation</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -120,34 +128,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Probation Term Lengths in Hawai’i</h1>
+<h1 class="title">Re-estimating Probation Term Lengths in Hawai’i</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Adam S. Cohen </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Hawaii State Judiciary
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
+      
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Created</div>
     <div class="quarto-title-meta-contents">
-             <p>Adam S. Cohen </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 1, 2024</p>
+      <p class="date">May 16, 2024</p>
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">May 17, 2024</p>
+    </div>
+  </div>
     
   </div>
   
 <div>
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
-    <p>How long are probation terms in Hawai’i? According to a <a href="https://www.pewtrusts.org/en/research-and-analysis/reports/2020/12/states-can-shorten-probation-and-protect-public-safety">report by The Pew Charitable Trusts (2020)</a>, the average probation term length is 58.9 months, the longest of any state in the US. But this analysis was limited to a single year, relied on an “indirect” approximation method, and suffered from at least one serious data quality issue that likely inflated estimates. To address these limitations, probation term length was estimated over a 12 year window with higher quality data, providing a more complete and accurate profile. Results show that <em>probation term lengths range from 29.7 to 38.4 months</em>. The new estimates converge when using the “indirect” method and a direct approach that relies on case-level data. Even when these limitations are addressed, estimates of probation term length are still misleading as they lump felony and non-felony probationers, which are mostly non-overlapping subpopulations. To provide a more conceptually meaningful estimate of probation term length, estimates were disaggregated by offense degree, yielding <em>15.4 to 34.2 months for misdemeanants</em> and <em>52.9 to 69.4 months for felons</em> between 2012 and 2023. Limitations of the data and implications for shortening probation are discussed.</p>
+    <p>How long are probation terms in Hawai’i? According to a <a href="https://www.pewtrusts.org/en/research-and-analysis/reports/2020/12/states-can-shorten-probation-and-protect-public-safety">report by The Pew Charitable Trusts (2020)</a>, the average probation term length is 58.9 months, the longest of any state in the US. But this analysis was limited to a single year, relied on an “indirect” approximation method, and suffered from at least one serious data quality issue that likely impacted estimates. To address these limitations, probation term length was estimated over a 12 year window with higher quality data, providing a more complete and accurate profile. Results show that <em>probation term lengths range from 29.7 to 38.4 months</em>. The new estimates converge when using the “indirect” method and a direct approach that relies on case-level data. Even when these limitations are addressed, estimates of probation term length are still misleading as they lump felony and non-felony probationers, which are largely non-overlapping subpopulations. To provide a more conceptually meaningful estimate of probation term length, estimates were disaggregated by offense degree, yielding <em>15.4 to 34.2 months for misdemeanants</em> and <em>52.9 to 69.4 months for felons</em> between 2012 and 2023. Limitations and recommendations are discussed.</p>
   </div>
 </div>
 
@@ -180,7 +201,7 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Pew did not have access to case-level data (e.g., probation start and termination dates) that could be used to calculate probation term length for individual probationers. Instead, they relied on descriptive statistics for the entire group of probationers and used those to approximate probation term length. This method has been shown to produce valid estimates so long as certain assumptions are met (<a href="https://link.springer.com/article/10.1007/s10940-007-9037-z">Patterson &amp; Preston, 2008</a>).</p>
+<p>Pew lacked access to case-level data (e.g., probation start and termination dates) that would be needed to calculate probation term length for individual probationers. Instead, they relied on descriptive statistics for the entire group of probationers and used those to approximate probation term length. This method has been shown to produce valid estimates so long as certain assumptions are met (<a href="https://link.springer.com/article/10.1007/s10940-007-9037-z">Patterson &amp; Preston, 2008</a>).</p>
 <p>Estimating probation length using this indirect method as described in <a href="https://link.springer.com/article/10.1007/s10940-007-9037-z">Patterson and Preston (2008)</a>) depends on only three variables: the size of the probation population at the beginning and end of the year, along with the number of exits. These three variables are used to calculate an “exit rate.”</p>
 <p><span class="math display">\[exit.rate = \frac{exits}{\frac{1}{2}*(population_{begin} + population_{end})}\]</span> The inverse of this exit rate is the estimated average probation length.</p>
 <p><span class="math display">\[probation.length = \frac{1}{exit.rate}\]</span></p>
@@ -235,19 +256,22 @@ Expand to learn more about the <em>indirect method</em> used by Pew
 <div class="cell-output-display">
 <div id="fig-pew2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-pew2-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-pew2-1.png" class="img-fluid figure-img" width="768"></p>
 <figcaption class="figure-caption">Figure&nbsp;2: Probation length by year. Data initially reported by Pew for 2000 and 2018 are in blue, with the national average in red.</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The estimated probation length in 2018 appears to represent a peak when using the data that was provided to BJS.</p>
+<p>The estimated probation length in 2018 appears to represent a peak when using the data that was provided to BJS from 2012 to 2023.</p>
 </section>
-<section id="issue-1-lagging-data-entry" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="issue-1-lagging-data-entry"><span class="header-section-number">3</span> Issue 1: Lagging data entry</h2>
-<section id="problem-pew-data-skewed-because-of-data-entry-lag" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="problem-pew-data-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1</span> Problem: Pew data skewed because of data entry lag</h3>
-<p>As of April 2024, there appears to be significant data entry lag in Caseload Explorer, the case management system used by probation at the Hawaii State Judiciary. Data entry does not appear to be “stable” until 12-24 months after the end of a calendar year.</p>
+<section id="re-estimating-probation-term-lengths" class="level2 page-columns page-full" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="re-estimating-probation-term-lengths"><span class="header-section-number">3</span> Re-estimating probation term lengths</h2>
+<p>Although <a href="#fig-pew2">Figure&nbsp;2</a> yields a more complete picture of probation term length, there are three known issues with the analysis that motivate a re-analysis.</p>
+<section id="using-complete-and-stable-data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="using-complete-and-stable-data"><span class="header-section-number">3.1</span> Using complete and stable data</h3>
+<section id="problem-previous-data-was-skewed-because-of-data-entry-lag" class="level4" data-number="3.1.1">
+<h4 data-number="3.1.1" class="anchored" data-anchor-id="problem-previous-data-was-skewed-because-of-data-entry-lag"><span class="header-section-number">3.1.1</span> Problem: Previous data was skewed because of data entry lag</h4>
+<p>Since at least 2012 through April of 2024, there appears to be significant data entry lag in Caseload Explorer, the case management system used by probation at the Hawaii State Judiciary. Data entry does not appear to be “stable” until 12-24 months after the end of a calendar year. But prior calculations of probation term length have been based on the BJS data, which in most years was pulled within 6 months after the end of the calendar year. As a result, the number of terminations in a given year has been significantly underestimated, which in term inflates estimates of probation term length (see <a href="#probation-length-before-and-after-2018">Section 2</a>).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -260,8 +284,8 @@ Expand to learn more about data entry lag in Caseload Explorer
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Lag in data entry was discovered when trying to re-analyze probation term lengths and noticing that the number of terminations, or exits, in a given year depends on when the analysis was run. When run a few months after the end of a calendar year, as it is typically done for the BJS Annual Probation Survey, there are typically 1000 to 2000 fewer terminations compared to when it is run 24 or more months later (not including 2022 or 2023, as not enough time has passed).</p>
-<p>For instance, when statistics were generated in early 2022 for the 2021 BJS Annual Probation Survey, 3981 terminations were reported based on the Investigation and Supervision Activity reporting tool in Caseload Explorer. When data were reanalyzed in Feb 2024, there were 4833 terminations, an increase of 852 terminations.</p>
+<p>Lag in data entry was discovered when trying to re-analyze probation term lengths and noticing that the number of terminations, or exits, in a given year depends on when the analysis was run. When an analysis for a calendar year is run a few months after the end of that year, as it is typically done for the BJS Annual Probation Survey, there are typically 1000 to 2000 fewer terminations compared to when it is run 24 or more months later.</p>
+<p>For instance, when statistics were generated in early 2022 for the 2021 BJS Annual Probation Survey, 3981 terminations were reported based on the Investigation and Supervision Activity reporting tool in Caseload Explorer. When data were reanalyzed in April 2024, there were 4833 terminations, an increase of 852 terminations.</p>
 <p>Why did terminations increase by 852? The difference appears to be due in part to data entry lag. Using an in-house script to pull data directly from the underlying database, about 20 supervision cases were sampled that showed up on an extract run in April 2024 but were missing from an earlier extract run in February 2024, and it appears the data for termination date was only added in Caseload Explorer between February and April 2024.</p>
 <p>The farther out the analysis is run from the time period under study, the larger the estimated number of terminations tends to get. For example for 2021 terminations, 3981 in early 2022 grows to 4800 in February 2024, which grows to 4833 in April 2024.</p>
 <p>The good news is that data appears mostly stable 2-3 years out. In other words, as of today, data from 2021 and anything prior doesn’t seem to change much. But for anything within the past 1-2 years (2022 to 2023), the estimates seem to move a bit because data is still coming in, although it stabilizes the further out one goes.</p>
@@ -328,9 +352,9 @@ Expand to learn more about data entry lag in Caseload Explorer
 </div>
 </div>
 </section>
-<section id="solution-using-data-when-it-is-stable-and-relatively-complete" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="solution-using-data-when-it-is-stable-and-relatively-complete"><span class="header-section-number">3.2</span> Solution: Using data when it is stable and relatively complete</h3>
-<p>To address this, the indirect method was used again but with data extracted from Caseload Explorer in April 2024. For all years except 2022 and 2023, this allowed at least 24 months after the close of the year for probation officers to complete data entry.</p>
+<section id="solution-using-data-when-it-is-stable-and-relatively-complete" class="level4" data-number="3.1.2">
+<h4 data-number="3.1.2" class="anchored" data-anchor-id="solution-using-data-when-it-is-stable-and-relatively-complete"><span class="header-section-number">3.1.2</span> Solution: Using data when it is stable and relatively complete</h4>
+<p>To address this, the indirect method was used again but with data extracted from Caseload Explorer in April 2024 for each year between 2012 and 2023. For all years except 2022 and 2023, this allowed at least 24 months after the close of the calendar year for probation officers to complete data entry.</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -406,7 +430,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display">
 <div id="fig-pew3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-pew3-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-pew3-1.png" class="img-fluid figure-img" width="768"></p>
 <figcaption class="figure-caption">Figure&nbsp;3: Probation length by year, high vs low data entry lag.</figcaption>
 </figure>
 </div>
@@ -415,12 +439,12 @@ Expand to learn more about data entry lag in Caseload Explorer
 <p>As can be seen by the <span style="color:darkorange;">orange line</span>, the estimated probation term length appears to drop by at least 12 months if not more for years 2012-2021 when enough time is provided for more complete data entry. Although less time has passed, there also appears to be a decrease by 4-5 months for 2022 and 2023. Due to residual data entry lag, it is expected that estimates for 2022 and especially 2023 will continue to drop (preliminary analysis shows that estimates for a given year stabilize after 2 years). This suggests that probation term lengths in Hawaii may be lower than originally reported, even for the peak year of 2018.</p>
 </section>
 </section>
-<section id="issue-2-indirectly-calculating-probation-length" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="issue-2-indirectly-calculating-probation-length"><span class="header-section-number">4</span> Issue 2: Indirectly calculating probation length</h2>
-<section id="problem-the-validity-of-the-indirect-method-used-by-pew-depends-on-assumptions-that-may-have-been-violated" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="problem-the-validity-of-the-indirect-method-used-by-pew-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">4.1</span> Problem: The validity of the indirect method used by Pew depends on assumptions that may have been violated</h3>
-<p>Pew, without access to individual case-level data, used a method that allowed them to estimate probation term length indirectly using probation population size and number of exits for a given year. This method should deliver valid estimates so long as certain assumptions are met, including that the probation population is stable over time. But the population of probationers in Hawaii has changed more or less sharply, depending on the year.</p>
-<div class="cell">
+<section id="calculating-probation-length-directly" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="calculating-probation-length-directly"><span class="header-section-number">3.2</span> Calculating probation length directly</h3>
+<section id="problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated" class="level4" data-number="3.2.1">
+<h4 data-number="3.2.1" class="anchored" data-anchor-id="problem-the-validity-of-the-indirect-method-depends-on-assumptions-that-may-have-been-violated"><span class="header-section-number">3.2.1</span> Problem: The validity of the indirect method depends on assumptions that may have been violated</h4>
+<p>Without access to individual case-level data, Pew estimated probation term length indirectly using start and end probation population size and number of exits for a given year (<a href="#probation-length-before-and-after-2018">Section 2</a>). This method should deliver valid estimates so long as certain assumptions are met, including that the probation population is stable over time. But the population of probationers in Hawaii has changed more or less sharply, depending on the year.</p>
+<div class="cell tbl-cap-location-bottom">
 <details>
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>prob_HI_update <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Stats01_run_in_2024_CY2012-CY2023_2024-04-29.xlsx"</span>, <span class="at">col_types =</span> <span class="st">"numeric"</span>)</span>
@@ -433,7 +457,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display">
 <div id="tbl-pop-size" class="anchored">
 <table class="table table-sm table-striped small">
-<caption>Table&nbsp;1: Changing beginning and ending probation population size over time</caption>
+<caption>Table&nbsp;1: Changes in the start and end probation population size over time</caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;">Year</th>
@@ -520,13 +544,13 @@ Expand to learn more about data entry lag in Caseload Explorer
 </div>
 </div>
 </div>
-<p>This could introduce inaccuracy when using the indirect method. How does probation term length change, if at all, when using a direct approach that relies on calculating probation term length at the individual case level and averaging across cases?</p>
+<p>If these changes violate the assumptions of the indirect method, then estimates of probation term length are more likely to be inaccurate. How does probation term length change, if at all, when using a direct approach that relies on calculating probation term length at the individual case level and averaging across cases?</p>
 </section>
-<section id="solution-using-a-direct-method-to-estimate-probation-term-length" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">4.2</span> Solution: Using a direct method to estimate probation term length</h3>
-<p>For each probationer, a probation term length was calculated by taking the difference between the start and termination of their probation term.</p>
-<p><span class="math display">\[probationer.term.length = probation.terminate.date - probation.start.date\]</span> <em>This calculation is not based on how long they were ordered to serve by a judge but by how long they actually served.</em></p>
-<p>Each supervision case was assigned to a calendar year based on the year of the case termination. All of the individual term lengths grouped in a given year were then averaged to get an estimate of probation term length for that year.</p>
+<section id="solution-using-a-direct-method-to-estimate-probation-term-length" class="level4" data-number="3.2.2">
+<h4 data-number="3.2.2" class="anchored" data-anchor-id="solution-using-a-direct-method-to-estimate-probation-term-length"><span class="header-section-number">3.2.2</span> Solution: Using a direct method to estimate probation term length</h4>
+<p>For each probationer, a probation term length was calculated by taking the difference between the start date and termination date of their probation term.</p>
+<p><span class="math display">\[probationer.term.length = probation.terminate.date - probation.start.date\]</span> <strong><em>This calculation is not based on how long probationers were ordered to serve by a judge but by how long they actually served.</em></strong></p>
+<p>Each supervision case was assigned to a calendar year based on the year of the termination date. The individual term lengths for cases grouped in a given year were then averaged to get an estimate of probation term length for that year.</p>
 <p><span class="math display">\[ probation.term.length_{year} = \frac{1}{n} \sum_{i = 1}^n({probation.terminate.date_{i,year} - probation.start.date_{i,year}})\]</span> Where <em>i</em> is an individual probationer, <em>n</em> is the total number of probationers in a cohort, and <em>year</em> is a calendar year.</p>
 <p>Individual case data was pulled from CX, the database underlying Caseload Explorer.</p>
 <div class="cell">
@@ -583,7 +607,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> LastName</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Here are the <span style="color:gold;">direct</span> estimates of probation term length plotted against the <span style="color:darkorange;">indirect</span> method using the new Caseload Explorer data. The estimates based on the <strong>BJS data with high data entry lag using the indirect method</strong> is also plotted.</p>
+<p>Here are the <span style="color:gold;">direct</span> estimates of probation term length plotted against the <span style="color:darkorange;">indirect</span> method using the new Caseload Explorer data. The estimates based on the <strong>data-lagged BJS data using the indirect method</strong> is also plotted.</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -910,7 +934,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display">
 <div id="fig-pew4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-pew4-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-pew4-1.png" class="img-fluid figure-img" width="768"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: Probation length by year, comparing the direct method to the Pew (indirect) method</figcaption>
 </figure>
 </div>
@@ -919,26 +943,26 @@ Expand to learn more about data entry lag in Caseload Explorer
 <p>The <span style="color:gold;">direct method</span> with new data and <span style="color:darkorange;">indirect method</span> with new data yield similar, though not identical, results, both suggesting estimated probation term lengths are lower compared to those estimates using an indirect method with data suffering from data entry lag.</p>
 </section>
 </section>
-<section id="issue-3-aggregating-felony-and-non-felony-probationers" class="level2 page-columns page-full" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="issue-3-aggregating-felony-and-non-felony-probationers"><span class="header-section-number">5</span> Issue 3: Aggregating felony and non-felony probationers</h2>
-<section id="problem-the-pew-report-aggregates-felony-and-non-felony-probationers-but-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="problem-the-pew-report-aggregates-felony-and-non-felony-probationers-but-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">5.1</span> Problem: The Pew report aggregates felony and non-felony probationers, but the mean of data containing two (mostly) non-overlapping groups is often meaningless</h3>
-<p>Consider a room filled with 100 government workers and 100 tech industry multi-millionaires. The average salary in the room ends up not representing anyone. When a data distribution is bimodal, the mean is often meaningless.</p>
+<section id="disaggregating-felony-and-non-felony-probationers" class="level3 page-columns page-full" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="disaggregating-felony-and-non-felony-probationers"><span class="header-section-number">3.3</span> Disaggregating felony and non-felony probationers</h3>
+<section id="problem-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless" class="level4" data-number="3.3.1">
+<h4 data-number="3.3.1" class="anchored" data-anchor-id="problem-the-mean-of-data-containing-two-mostly-non-overlapping-groups-is-often-meaningless"><span class="header-section-number">3.3.1</span> Problem: The mean of data containing two (mostly) non-overlapping groups is often meaningless</h4>
+<p>Consider a room filled with 100 government workers and 100 tech industry multi-millionaires. The average salary in the room falls in between the distributions and ends up not representing anyone. When a data distribution is bimodal, reflecting two largely non-overlapping sub-groups, the mean of the entire group is often meaningless.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-histo-example" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-histo-example-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-histo-example-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption class="figure-caption">Figure&nbsp;5: Salary distribution for government works and tech multi-millionaires (data is hypothetical)</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The probation term lengths for felony and misdemeanor probationers are like salaries in this example. Felony and misdemeanor probationers are in effect two different sub-populations with distinct distributions for term length, and conceptually, mixing them and taking an average can produce a distorted representation of probation term length. When there are two sub-groups in a dataset, it is often conceptually clearer to disaggregate the data by group and compute separate means for each.</p>
+<p>The probation term lengths for felony and misdemeanor probationers are like salaries in this example. Felony and misdemeanor probationers are in effect two different sub-populations with distinct distributions for term length, and conceptually, mixing them and taking an average can produce a distorted estimate of probation term length. When there are two sub-groups in a dataset, it is often conceptually clearer to disaggregate the data by group and compute separate means for each.</p>
 </section>
-<section id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data" class="level3 page-columns page-full" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="solution-disaggregating-felony-and-non-felony-using-a-direct-method-and-stable-data"><span class="header-section-number">5.2</span> Solution: Disaggregating felony and non-felony using a direct method and stable data</h3>
-<p>First, here is the distribution of probation term lengths, disaggregated by offense degree and year. Note the empirical support for mostly non-overlapping distributions for felony and misdemeanor probation term lengths across years.</p>
+<section id="solution-disaggregating-felony-and-non-felony-probationers" class="level4 page-columns page-full" data-number="3.3.2">
+<h4 data-number="3.3.2" class="anchored" data-anchor-id="solution-disaggregating-felony-and-non-felony-probationers"><span class="header-section-number">3.3.2</span> Solution: Disaggregating felony and non-felony probationers</h4>
+<p>First, here is the distribution of probation term lengths, disaggregated by offense degree and year using case-level data between 2012 and 2023. Note the empirical support for mostly non-overlapping distributions for felony and misdemeanor probation term lengths across years.</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -976,12 +1000,22 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display">
 <div id="fig-histo" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-histo-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-histo-1.png" class="img-fluid figure-img" width="768"></p>
 <figcaption class="figure-caption">Figure&nbsp;6: Distribution of probation term length disaggregated by offense severity</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>This is consistent with <strong>HRS §706-623 Terms of probation.</strong></p>
+<blockquote class="blockquote">
+<ol type="1">
+<li><em>[Repeal and reenactment on June 30, 2026. L 2020, c 19, §15.]</em> When the court has sentenced a defendant to be placed on probation, the period of probation shall be as follows, unless the court enters the reason therefor on the record and sentences the defendant to a shorter period of probation:</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) Ten years upon conviction of a class A felony;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Five years upon conviction of a class B or class C felony under part II, V, or VI of chapter 707, chapter 709, and part I of chapter 712 and four years upon conviction of any other class B or C felony;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) One year upon conviction of a misdemeanor; except that upon a conviction under section 586-4, 586-11, or 709-906, the court may sentence the defendant to a period of probation not exceeding two years; or</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d) Six months upon conviction of a petty misdemeanor; provided that up to one year may be imposed upon a finding of good cause; except upon a conviction under section 709-906, the court may sentence the defendant to a period of probation not exceeding one year.</p>
+</blockquote>
 <p>Next, here is probation term length as a function of year. The graph on the left breaks down offense severity into FA, FB, FC, MD, PM, and other. The plot on the right lumps all felonies together and all MD and PM together.</p>
 <div class="page-columns page-full">
 <details>
@@ -1089,7 +1123,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
 <div id="fig-coarse-severity-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-coarse-severity-1.png" class="img-fluid figure-img" data-ref-parent="fig-coarse-severity" width="576"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-coarse-severity-1.png" class="img-fluid figure-img" data-ref-parent="fig-coarse-severity" width="576"></p>
 <figcaption class="figure-caption">(a) Offense severity grouped by FA, FB, FC, MD, PM, and other</figcaption>
 </figure>
 </div>
@@ -1097,7 +1131,7 @@ Expand to learn more about data entry lag in Caseload Explorer
 <div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
 <div id="fig-coarse-severity-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="probation_term_length_report_2024-05-06_files/figure-html/fig-coarse-severity-2.png" class="img-fluid figure-img" data-ref-parent="fig-coarse-severity" width="576"></p>
+<p><img src="probation_term_length_report_files/figure-html/fig-coarse-severity-2.png" class="img-fluid figure-img" data-ref-parent="fig-coarse-severity" width="576"></p>
 <figcaption class="figure-caption">(b) Offense severity grouped by F, MD-PM, and other</figcaption>
 </figure>
 </div>
@@ -1107,52 +1141,298 @@ Expand to learn more about data entry lag in Caseload Explorer
 </figure>
 </div>
 </div>
+<p>The plots indicate that estimates for felony vs non-felony probationers differ by as much as 45 months and that probation term length between 2012 and 2023 range from 15.4 to 34.2 months for misdemeanants and 52.9 to 69.4 months for felons.</p>
 </section>
 </section>
-<section id="summary" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="summary"><span class="header-section-number">6</span> Summary</h2>
-<p>The estimate of the probation term length based on one year of data, using an indirect method that aggregated felony and non-felony probationers and relied on data that was incomplete appears to present an inaccurate estimate of probation term length.</p>
-<p>Looking at multiple years of probation data using a direct method that relies on case-level data that is stable, relatively complete and is disaggregated by offense severity suggests that probation term length may be lower than initially reported.</p>
-<p>UNDER CONSTRUCTION!</p>
-<section id="outstanding-issues" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="outstanding-issues"><span class="header-section-number">6.1</span> Outstanding issues</h3>
-<section id="unexplained-fluctuation-in-size-of-year-end-probation-population" class="level4" data-number="6.1.1">
-<h4 data-number="6.1.1" class="anchored" data-anchor-id="unexplained-fluctuation-in-size-of-year-end-probation-population"><span class="header-section-number">6.1.1</span> Unexplained fluctuation in size of year-end probation population</h4>
-<p>UNDER CONSTRUCTION!</p>
 </section>
-<section id="remaining-data-quality-issues-positive-and-negative-outliar-term-lengths" class="level4" data-number="6.1.2">
-<h4 data-number="6.1.2" class="anchored" data-anchor-id="remaining-data-quality-issues-positive-and-negative-outliar-term-lengths"><span class="header-section-number">6.1.2</span> Remaining data quality issues: positive and negative outliar term lengths</h4>
-<p>UNDER CONSTRUCTION!</p>
+<section id="summary" class="level2 page-columns page-full" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="summary"><span class="header-section-number">4</span> Summary</h2>
+<p>Estimates of probation term length based on one year of data, while suffering from data entry lag and applying an indirect method that aggregated felony and non-felony probationers, appears to present a limited and possibly inaccurate estimate of probation term length.</p>
+<p>Looking at multiple years of probation data using a direct method that relies on case-level data that is relatively stable and complete and is disaggregated by offense severity suggests that probation term length between 2012 and 2023 range from <em>15.4 to 34.2 months for misdemeanants</em> and <em>52.9 to 69.4 months for felons.</em></p>
+<p>Some outstanding limitations follow as well as recommendations for improving future estimates of probation term length and for implementing an early termination program.</p>
+<section id="remaining-data-quality-issues" class="level3 page-columns page-full" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="remaining-data-quality-issues"><span class="header-section-number">4.1</span> Remaining data quality issues</h3>
+<section id="unexplained-decrease-in-size-of-year-end-probation-population" class="level4 page-columns page-full" data-number="4.1.1">
+<h4 data-number="4.1.1" class="anchored" data-anchor-id="unexplained-decrease-in-size-of-year-end-probation-population"><span class="header-section-number">4.1.1</span> Unexplained decrease in size of year-end probation population</h4>
+<p>One impact of data entry lag is that terminations grow as data entry catches up (<a href="#tbl-unexplained-drop">Table&nbsp;2</a>, column c). But this in turn should decrease the end-of-year probation population by the same amount. In fact, the probation population on December 31st does go down (<a href="#tbl-unexplained-drop">Table&nbsp;2</a>, column f) but it goes down by even more than is predicted based on the growth in exits due to an increase in number of terminations alone (<a href="#tbl-unexplained-drop">Table&nbsp;2</a>, column g).</p>
+<div class="cell tbl-cap-location-bottom page-columns page-full">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>table_unexplained_drop <span class="ot">&lt;-</span> bjs_prob_HI_stats_filler <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(prob_HI_update_stats, <span class="at">by =</span> <span class="st">"year"</span>, <span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">"_bjs"</span>, <span class="st">"_new"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">9</span><span class="sc">:</span><span class="dv">11</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">between</span>(year, <span class="dv">2012</span>,<span class="dv">2023</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">growth_in_terminations =</span> exits_new <span class="sc">-</span> exits_bjs,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">drop_in_end_of_year_pop =</span> pop_end_bjs <span class="sc">-</span> pop_end_new,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">unexplained_drop_num =</span> drop_in_end_of_year_pop <span class="sc">-</span> growth_in_terminations,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">unexplained_drop_pct =</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">round_half_up</span>((drop_in_end_of_year_pop <span class="sc">-</span> growth_in_terminations)<span class="sc">/</span>drop_in_end_of_year_pop, <span class="at">digits =</span> <span class="dv">3</span>),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>         <span class="at">unexplained =</span> <span class="fu">paste0</span>(unexplained_drop_num, <span class="st">" ("</span>, unexplained_drop_pct, <span class="st">"%)"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year, <span class="st">"exits w/lag&lt;br&gt;(a)"</span> <span class="ot">=</span> exits_bjs, <span class="st">"exits w/o lag&lt;br&gt;(b)"</span> <span class="ot">=</span> exits_new, </span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>         <span class="st">"growth_in_exits&lt;br&gt;(c = b - a)"</span> <span class="ot">=</span> growth_in_terminations, </span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Pop. year-end w/lag&lt;br&gt;(d)"</span> <span class="ot">=</span> pop_end_bjs, <span class="st">"Pop. year-end w/o lag&lt;br&gt;(e)"</span> <span class="ot">=</span> pop_end_new, </span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Drop in year-end pop.&lt;br&gt;(f = d - e)"</span> <span class="ot">=</span> drop_in_end_of_year_pop, </span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>         <span class="st">"Unexplained drop&lt;br&gt;(g = f - c)"</span> <span class="ot">=</span> unexplained,</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>         unexplained_drop_pct)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>table_unexplained_drop <span class="sc">%&gt;%</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>unexplained_drop_pct) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>, <span class="co">#use format and escape so that &lt;br&gt; creates linebreaks in column heads &lt;- this is disabled when table.attr is set to diasble quarto</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>               <span class="at">escape =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>               <span class="co"># align=c('r', 'r', 'r', 'r', 'r', 'r', 'r', 'c'),</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>               <span class="at">align =</span> <span class="st">"r"</span>,</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>               <span class="at">table.attr =</span> <span class="st">'data-quarto-disable-processing="true"'</span>) <span class="sc">%&gt;%</span>  <span class="co">#to enable kableExtra formatting, disable Quarto</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>, <span class="st">"responsive"</span>), </span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>                            <span class="at">font_size =</span> <span class="dv">14</span>,</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>                            <span class="at">fixed_thead =</span> T,</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># fixed_thead = list(enabled = T, background = "red")</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>                            ) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">row_spec</span>(<span class="at">row =</span> <span class="dv">0</span>, <span class="at">align =</span> <span class="st">"r"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">column_spec</span>(<span class="at">column =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">8</span>), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># kableExtra::column_spec(column = 5, width = "4cm") %&gt;% </span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">column_spec</span>(<span class="at">column =</span> <span class="dv">8</span>,</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>                          <span class="at">color =</span> <span class="st">"white"</span>,</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>                          <span class="at">background =</span> <span class="fu">spec_color</span>(table_unexplained_drop<span class="sc">$</span>unexplained_drop_pct, <span class="at">begin =</span> <span class="fl">0.1</span>, <span class="at">end =</span> <span class="fl">0.9</span>, <span class="at">option =</span> <span class="st">"C"</span>, <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display column-page">
+<div id="tbl-unexplained-drop" class="anchored">
+
+<table data-quarto-disable-processing="true" class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; margin-left: auto; margin-right: auto;"><caption>Table&nbsp;2:  <p>Percentage of change in year-end population unattributed to change in
+terminations/exits</p> </caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> year </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> exits w/lag<br>(a) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> exits w/o lag<br>(b) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> growth_in_exits<br>(c = b - a) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> Pop. year-end w/lag<br>(d) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> Pop. year-end w/o lag<br>(e) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> Drop in year-end pop.<br>(f = d - e) </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;text-align: right;"> Unexplained drop<br>(g = f - c) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2012 </td>
+   <td style="text-align:right;"> 6297 </td>
+   <td style="text-align:right;"> 7929 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1632 </td>
+   <td style="text-align:right;"> 22211 </td>
+   <td style="text-align:right;"> 19300 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 2911 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(252, 206, 37, 255) !important;"> 1279 (43.9%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:right;"> 5592 </td>
+   <td style="text-align:right;"> 7328 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1736 </td>
+   <td style="text-align:right;"> 21576 </td>
+   <td style="text-align:right;"> 18040 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 3536 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(222, 97, 100, 255) !important;"> 1800 (50.9%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2014 </td>
+   <td style="text-align:right;"> 5303 </td>
+   <td style="text-align:right;"> 6367 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1064 </td>
+   <td style="text-align:right;"> 20931 </td>
+   <td style="text-align:right;"> 18180 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 2751 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(77, 2, 162, 255) !important;"> 1687 (61.3%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2015 </td>
+   <td style="text-align:right;"> 5061 </td>
+   <td style="text-align:right;"> 6257 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1196 </td>
+   <td style="text-align:right;"> 20912 </td>
+   <td style="text-align:right;"> 17770 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 3142 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(66, 4, 158, 255) !important;"> 1946 (61.9%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2016 </td>
+   <td style="text-align:right;"> 4796 </td>
+   <td style="text-align:right;"> 5936 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1140 </td>
+   <td style="text-align:right;"> 20516 </td>
+   <td style="text-align:right;"> 17836 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 2680 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(142, 12, 164, 255) !important;"> 1540 (57.5%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 4557 </td>
+   <td style="text-align:right;"> 5640 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1083 </td>
+   <td style="text-align:right;"> 19830 </td>
+   <td style="text-align:right;"> 17151 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 2679 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(108, 0, 168, 255) !important;"> 1596 (59.6%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 4077 </td>
+   <td style="text-align:right;"> 5462 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1385 </td>
+   <td style="text-align:right;"> 20196 </td>
+   <td style="text-align:right;"> 16917 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 3279 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(138, 9, 165, 255) !important;"> 1894 (57.8%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 4225 </td>
+   <td style="text-align:right;"> 5887 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1662 </td>
+   <td style="text-align:right;"> 19619 </td>
+   <td style="text-align:right;"> 16422 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 3197 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(244, 137, 72, 255) !important;"> 1535 (48%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 3857 </td>
+   <td style="text-align:right;"> 4916 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1059 </td>
+   <td style="text-align:right;"> 17291 </td>
+   <td style="text-align:right;"> 14979 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 2312 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(189, 54, 134, 255) !important;"> 1253 (54.2%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 3981 </td>
+   <td style="text-align:right;"> 4837 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 856 </td>
+   <td style="text-align:right;"> 17746 </td>
+   <td style="text-align:right;"> 15931 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 1815 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(204, 72, 119, 255) !important;"> 959 (52.8%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2022 </td>
+   <td style="text-align:right;"> 5634 </td>
+   <td style="text-align:right;"> 5889 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 255 </td>
+   <td style="text-align:right;"> 14341 </td>
+   <td style="text-align:right;"> 13849 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 492 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(243, 134, 74, 255) !important;"> 237 (48.2%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2023 </td>
+   <td style="text-align:right;"> 4028 </td>
+   <td style="text-align:right;"> 4320 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 292 </td>
+   <td style="text-align:right;"> 14538 </td>
+   <td style="text-align:right;"> 14012 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;"> 526 </td>
+   <td style="text-align:right;font-weight: bold;color: red !important;color: white !important;background-color: rgba(253, 194, 41, 255) !important;"> 234 (44.5%) </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>While the end of year population was expected to drop because of the increase in terminations, it dropped further than expected for reasons that have yet to be determined.</p>
 </section>
-<section id="hi-has-a-high-percentage-of-felony-probationers-relative-to-other-jurisdictions" class="level4" data-number="6.1.3">
-<h4 data-number="6.1.3" class="anchored" data-anchor-id="hi-has-a-high-percentage-of-felony-probationers-relative-to-other-jurisdictions"><span class="header-section-number">6.1.3</span> HI has a high percentage of felony probationers relative to other jurisdictions</h4>
-<p>UNDER CONSTRUCTION! The trouble with comparing probation term lengths across states is that states differ in many ways. One important way in which they differ is the balance between the percentage of people serving a term of probation vs incarceration.** Some states send a high proportion of offenders to jail or prison, while in other states, a majority are sentenced to a probation term, and in still others, it is about even. Of all offenders, the balance mostly likely depends not on the people convicted of the most or least serious crimes, as they are likely to be handled similarly across states, but on those who have committed crimes of moderate severity*.</p>
-<p>States may vary in how they strike this balance for different reasons. Some states simply have <a href="https://projects.csgjusticecenter.org/tools-for-states-to-address-crime/50-state-crime-data/">higher serious crime rates</a>, and all else equal, will likely have a greater share of people serving a jail/prison term. In other states, the reasons might be more financial, as it <a href="https://50statespublicsafety.us/part-3/strategy-1/action-item-1/">costs significantly less</a> when a person is <a href="https://www.uscourts.gov/news/2017/08/17/incarceration-costs-significantly-more-supervision">under community supervision than incarcerated</a>. Another reason states might differ is political. Some states may believe an offender is more likely to be rehabilitated and less likely to reoffend if placed in the community rather than jail/prison or that incarceration should only be reserved for the most serious offenders, or many other reasons. Whatever the reason, given a person who has committed a crime, it might be expected that states that have higher probation relative to incarceration rates have longer probation terms because they have more people serving probation who are felony offenders or are moderate to high risk.</p>
-<p>In fact, Hawaii may fit this description. Hawaii has the 6th highest probation rate relative to incarceration rate in the country.</p>
+<section id="negative-zero-and-extreme-term-lengths" class="level4" data-number="4.1.2">
+<h4 data-number="4.1.2" class="anchored" data-anchor-id="negative-zero-and-extreme-term-lengths"><span class="header-section-number">4.1.2</span> Negative, zero, and extreme term lengths</h4>
+<p>A number of cases between 2012 and 2023 need to be investigated because of negative (65) or zero (127) probation term lengths. There are also 366 outliar cases with probation term lengths exceeding 20 years, although some of these may be “lifetime” probationers.</p>
+<div class="cell tbl-cap-location-bottom">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>neg_zero_extreme_df <span class="ot">&lt;-</span> prob_data_clean2 <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">between</span>(<span class="fu">as.numeric</span>(<span class="fu">as.character</span>(cyear)), <span class="dv">2012</span>, <span class="dv">2023</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prob_length_ordinal =</span> <span class="fu">case_when</span>(prob_length_days <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"negative days"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                                         prob_length_days <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"zero days"</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                                         prob_length_days <span class="sc">&gt;</span> <span class="dv">365</span><span class="sc">*</span><span class="dv">20</span> <span class="sc">~</span> <span class="st">"term &gt; 20 years"</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                                         prob_length_days <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"0 years &lt; term &lt;= 20 years"</span>),</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">prob_length_ordinal =</span> <span class="fu">factor</span>(prob_length_ordinal, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"term &gt; 20 years"</span>, <span class="st">"0 years &lt; term &lt;= 20 years"</span>, <span class="st">"zero days"</span>, <span class="st">"negative days"</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(<span class="st">"probation length"</span> <span class="ot">=</span> prob_length_ordinal, <span class="at">name =</span> <span class="st">"# of terminations/exits"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>neg_zero_extreme_df <span class="sc">%&gt;%</span> <span class="co"># knitr::kable() </span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">table.attr =</span> <span class="st">'data-quarto-disable-processing="true"'</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>               ) <span class="sc">%&gt;%</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>, <span class="st">"responsive"</span>),</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>                            <span class="at">position =</span> <span class="st">"center"</span>,</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>                            <span class="at">font_size =</span> <span class="dv">14</span>,</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>                            <span class="at">fixed_thead =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>                            <span class="at">full_width =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="at">column =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="at">width =</span> <span class="st">"18em"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="at">row =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>), <span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="tbl-zero-neg-terms" class="anchored">
+
+<table data-quarto-disable-processing="true" class="table table-striped table-hover table-condensed table-responsive" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;"><caption>Table&nbsp;3:  <p>Number of negative, zero, and extreme term lengths</p> </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> probation length </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> # of terminations/exits </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 18em; color: red !important;"> term &gt; 20 years </td>
+   <td style="text-align:right;width: 18em; color: red !important;"> 366 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 18em; "> 0 years &lt; term &lt;= 20 years </td>
+   <td style="text-align:right;width: 18em; "> 70252 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 18em; color: red !important;"> zero days </td>
+   <td style="text-align:right;width: 18em; color: red !important;"> 127 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 18em; color: red !important;"> negative days </td>
+   <td style="text-align:right;width: 18em; color: red !important;"> 65 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="hawaii-is-a-high-probation-low-incarceration-state" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="hawaii-is-a-high-probation-low-incarceration-state"><span class="header-section-number">4.2</span> Hawaii is a high-probation, low-incarceration state</h3>
+<p>Among offenders under correctional control in Hawaii, the majority are serving a term of probation rather than incarceration. In other states, the pattern is flipped, and in still others, there is a more even balance between probation and incarceration.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>In fact, in 2023, Hawaii had the 4th highest probation rate relative to incarceration rate in the country.</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>prob_incar <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"probation_incarceration_rates_PPI_2024-05-03.csv"</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>prob_incar <span class="sc">%&gt;%</span> </span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="st">"Percent on Probation"</span> <span class="ot">=</span> <span class="fu">round_half_up</span>(prob_pct, <span class="at">digits =</span> <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(States, Probation, <span class="st">"Total incarcerated"</span><span class="ot">=</span>total.incarcerated, <span class="st">"Percent on Probation"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">4</span>, <span class="at">bold =</span> T, <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">background =</span> <span class="st">"green"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>prob_incar <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"probation_incarceration_rates_PPI_2024-05-03.csv"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>prob_incar <span class="sc">%&gt;%</span> </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="st">"Percent on Probation"</span> <span class="ot">=</span> <span class="fu">round_half_up</span>(prob_pct, <span class="at">digits =</span> <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(States, Probation, <span class="st">"Total incarcerated"</span><span class="ot">=</span>total.incarcerated, <span class="st">"Percent on Probation"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">fixed_thead =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">4</span>, <span class="at">bold =</span> T, <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">background =</span> <span class="st">"green"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="tbl-prob-incarceration" class="anchored">
 <table class="table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Table&nbsp;2: Percentage of probationers relative to inmates in state prisons, local jails, Indian country jails, and youth facilities (<a href="https://www.prisonpolicy.org/reports/correctionalcontrol2023_data_appendix.html">Prison Policy Initiative</a>)</caption>
+<caption>Table&nbsp;4: Percentage of probationers relative to inmates in state prisons, local jails, Indian country jails, and youth facilities (<a href="https://www.prisonpolicy.org/reports/correctionalcontrol2023_data_appendix.html">Prison Policy Initiative</a>)</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">States</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Probation</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Total incarcerated</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Percent on Probation</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">States</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Probation</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Total incarcerated</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Percent on Probation</th>
 </tr>
 </thead>
 <tbody>
@@ -1475,16 +1755,45 @@ Expand to learn more about data entry lag in Caseload Explorer
 
 </div>
 </div>
-<p>*Although statutes across states can and do vary in punishment for certain crimes, it is assumed here that penalties are correlated with offenses.</p>
+<p>The balance mostly likely depends not on the people convicted of the most or least serious crimes, as they are likely handled similarly across states,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> but on those who have committed crimes of moderate severity. Given this difference between states, should similar probation term lengths be expected in the first instance?</p>
+<p>There are reasons for thinking that probation lengths could differ simply because of the probation-incarceration balance. Given a person who has committed a crime, it might be expected that states that have higher probation populations relative to incarceration have longer probation terms because they have more people serving probation who are moderate to high risk. In other words, the same person who might receive a long probation term in one state for comitting a crime of moderate severity might be sentenced to prison in another. But all else equal, the state that sends the person to prison will generally have lower probation term lengths because the offender is not being placed on probation in the first place.</p>
+<p>The trouble with comparing probation term lengths across states is that states differ in many ways, not just in the balance between probation and incarceration. The many moving parts between jurisdictions makes comparisons fraught, as observed differences can have many possible explanations, including ones that reveal a difference may be more apparent than real.</p>
 </section>
-</section>
-<section id="implications-for-early-termination-study" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="implications-for-early-termination-study"><span class="header-section-number">6.2</span> Implications for early termination study</h3>
+<section id="recommendations" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="recommendations"><span class="header-section-number">4.3</span> Recommendations</h3>
 <p>UNDER CONSTRUCTION!</p>
+<section id="timely-data-entry-and-timing-of-reports" class="level4" data-number="4.3.1">
+<h4 data-number="4.3.1" class="anchored" data-anchor-id="timely-data-entry-and-timing-of-reports"><span class="header-section-number">4.3.1</span> Timely data entry and timing of reports</h4>
+<p>So that future estimates of probation term length are more reliable and valid, probation officers and probation staff are encouraged to terminate cases as soon as possible. Staff may consider screening the database on a regular basis for cases that have a probation “end date”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> that has been exceeded but have not yet been terminated. Recognizing the heavy caseload of probation officers, administration may consider allocating additional resources to probation if probation believes this would be of benefit.</p>
+</section>
+<section id="investigating-cases-with-unusual-term-lengths" class="level4" data-number="4.3.2">
+<h4 data-number="4.3.2" class="anchored" data-anchor-id="investigating-cases-with-unusual-term-lengths"><span class="header-section-number">4.3.2</span> Investigating cases with unusual term lengths</h4>
+<p>To address cases with zero and negative probation term lengths, as well as those with extremely long terms, probation staff may consider investigating these cases and fixing any incorrect data entry. Probation staff may also consider running regular reports to identify cases with unusual probation term lengths so they can be promptly investigated.</p>
+</section>
+<section id="studying-the-impact-of-early-termination-from-probation" class="level4" data-number="4.3.3">
+<h4 data-number="4.3.3" class="anchored" data-anchor-id="studying-the-impact-of-early-termination-from-probation"><span class="header-section-number">4.3.3</span> Studying the impact of early termination from probation</h4>
+<p>In 2024, the Thirty-second Legislature introduced <a href="https://www.capitol.hawaii.gov/session/measure_indiv.aspx?billtype=SB&amp;billnumber=2395&amp;year=2024">SB 2395</a>, recommending a probation compliance credit program that would allow probationers meeting certain criteria related to the terms of their probation to earn “time” credits that would reduce their probation term. The motivation for the program was in part that Hawaii had the longest estimated probation term length in the US in 2018.</p>
+<p>Some research has found that long probation terms do not reduce recidivism and result in increased technical violations. But it is not clear that Probation term length has been linked to recommendations to shorten probation term length in Hawaii. A question to consider is why the whether to shorten probation term length should be considered on its own terms, not because the average is higher or lower than other states the question really revolves around what are our goals with probation? if it is to reduce recidivism, then probation terms should be adjusted in a way that maximizes reduction in recidivism</p>
+<p>focusing on MD vs felony probationers, a trade-off:</p>
+<ul>
+<li><p>MD: low risk, but already serving short terms</p></li>
+<li><p>F: serving longer terms, but more likely to be mod-high risk</p></li>
+</ul>
+<p>selecting criteria for early termination</p>
+<p>carefully considering the impact of probation length on recidivism</p>
+</section>
 </section>
 </section>
 
-</main>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>How states wind up with a particular balance likely depends on many factors. Some states have <a href="https://projects.csgjusticecenter.org/tools-for-states-to-address-crime/50-state-crime-data/">higher crime rates</a>, or allocate more resources to solving serious crimes, and all else equal, will likely have a greater share of people serving a jail/prison term. In other states, the reasons might be more financial, as it <a href="https://50statespublicsafety.us/part-3/strategy-1/action-item-1/">costs significantly less</a> when a person is <a href="https://www.uscourts.gov/news/2017/08/17/incarceration-costs-significantly-more-supervision">under community supervision than incarcerated</a>. Another reason states might differ is socio-political. For instance, people may believe an offender is more likely to be rehabilitated and less likely to reoffend if placed in the community rather than jail/prison or that incarceration should only be reserved for the most serious offenders.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Although statutes across states can and do vary in punishment for the same crimes, it is assumed here that penalties are correlated with offenses across states.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>the length of the probation term set at sentencing<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
