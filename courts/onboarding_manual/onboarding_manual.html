@@ -615,7 +615,7 @@ We have also worked with The <a href="https://ag.hawaii.gov/hcjdc/">Hawaii Crimi
 </section>
 <section id="judiciary-case-management-systems-cms-and-databases" class="level3 page-columns page-full" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="judiciary-case-management-systems-cms-and-databases"><span class="header-section-number">5.2</span> Judiciary Case Management Systems (CMS) and databases</h3>
-<p>The primary data system for court records is known as the Judiciary Information Management System (JIMS). The GUI is known as <a href="http://jimsicc1.courts.state.hi.us/JIMSWeb/login.iface"><strong>JIMS Portal</strong></a> and the underlying database, which we interact with regularly for extracting data, is known as the <strong>JIMS Oracle Database</strong> (Oracle 19c as of May 2024). The “reporting” database we have access to is in fact a mirror of the JIMS Production database, and it is on a one day delay compared to the Production database, so new court activity does not appear until the next day. We use Oracle SQL Developer as our IDE (version 24.3.0.284 as of 2024/10/23).</p>
+<p>The primary data system for court records is known as the Judiciary Information Management System (JIMS). The GUI is known as <a href="http://jimsicc1.courts.state.hi.us/JIMSWeb/login.iface"><strong>JIMS Portal</strong></a> and the underlying database, which we interact with regularly for extracting data, is known as the <strong>JIMS Oracle Database</strong> (Oracle 19c as of May 2024). The “reporting” database we have access to is in fact a mirror of the JIMS Production database, and it is on a one day delay compared to the Production database, so new court activity does not appear until the next day. We use Oracle SQL Developer as our IDE (version 23.1.1.345 as of 2024/11/04; <span style="color:red;">N.B.: There is a major bug in v24.3.0.284 that prevents exporting query results to xlsx or csv</span>).</p>
 <div class="column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure quarto-figure-center" style="flex-basis: 47.0%;justify-content: center;">
@@ -1128,7 +1128,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":true,"selector":".lightbox","descPosition":"bottom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom"});</script>
 <script>videojs(video_shortcode_videojs_video1);</script>
 <script>videojs(video_shortcode_videojs_video2);</script>
 <script>videojs(video_shortcode_videojs_video3);</script>
