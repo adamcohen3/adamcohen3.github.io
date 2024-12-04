@@ -1,0 +1,611 @@
+---
+title: "Research and Planning Division<br>Onboarding Manual"
+date-modified: 2024-11-04
+# date: 2024-10-25
+filters:
+   - lightbox
+lightbox: auto
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    number-sections: true
+    link-external-newwindow: true
+---
+
+## Welcome {.unnumbered}
+
+::: columns
+::: {.column width="60%"}
+
+Welcome to the Judiciary [ohana](https://hilo.hawaii.edu/wehe/?q=ohana). We are thrilled that you are joining the Research and Planning team and the Policy and Planning Department. We look forward to working with you and learning more about you.  
+
+To help make your transition to the Judiciary as smooth as possible, please read the information below. It may come in handy later as well so feel free to refer back to it as needed. Any and all questions are encouraged, and if you have any feedback about this manual, please direct it to the head of the Research and Planning Division.
+
+:::
+
+::: {.column width="40%"}
+
+[![](hawaii_seal_judiciary_under_glass.png){width=81% fig-align="center"}](https://www.courts.state.hi.us/)
+
+:::
+
+:::
+
+
+## Logistics
+
+### Preboarding
+Before your first day at the Judiciary, you will have an appointment with the Employee Services Division in the Human Resources Department (HR) for a small group orientation. HR should reach out to you to schedule your appointment. New hire intake takes about one hour and involves reviewing information and signing various forms.
+
+::: {.callout-note title="Expand to view information/forms" collapse="true"}
+- [ ] 1. Employment Eligibility Verification (Form I-9)  
+- [ ] 2. HIP Employee Self Service (direct deposit/tax withholding/ Employee’s Designation of Payroll Beneficiary)  
+- [ ] 3. Personal Data Sheet
+- [ ] 4. EEO and Affirmative Action Survey
+- [ ] 5. Verification of Government Service
+- [ ] 6. Discrimination/Harassment-Free Workplace Policy& Acknowledgement Form/Bias Awareness Guide
+- [ ] 7. Employees’ Retirement System
+    - [ ] a. Membership Enrollment Form (ERS-1)
+    - [ ] b. Form 1-A Contributory/Hybrid Plan Designation of Beneficiary
+    - [ ] c. ERS Hybrid Plan Handout
+- [ ] 8. Empower – The Island Savings Plan materials (1-888-71A-LOHA)
+- [ ] 9. Hawaii Employer-Union Health Benefits Trust Fund Reference Guide for Active Employees
+    - [ ] a. EUTF Premium Rates
+    - [ ] b. Group Life Insurance Beneficiary Designation Form
+    - [ ] c. Premium Conversion Plan Information Sheet
+    - [ ] d. Health Insurance Marketplace Employer Notice
+    - [ ] e. EUTF Cheat Sheet for New Hires dated 09/27/22
+- [ ] 10. Island Flex Handout
+- [ ] 11. Statewide Policy Advisory Committee (SPAC) Policy #11
+- [ ] 12. Collective Bargaining Unit Agreement for Unit _____/HGEA Flyer
+- [ ] 13. Temporary Disability Benefit Brochure (TDI)
+- [ ] 14. Employee’s Handbook/Errata for Employee’s Handbook
+- [ ] 15. Family Leave Handout/FMLA Employee Rights Handout
+- [ ] 16. Ethics Guide for Elected Officials, Employees, Members of Boards and Commissions
+- [ ] 17. Summary of Mandatory Judiciary Training
+    - [ ] a. Judiciary Equal Employment Opportunity (EEO) Training - Discrimination/Harassment-Free Workplace Policy online training
+    - [ ] b. Judiciary Equal Employment Opportunity (EEO) Training - Recognizing and Reducing Bias online training
+    - [ ] c. Hawaii State Ethics Commission Training
+    - [ ] d. Judiciary "Cybersecurity at Work" Training
+    - [ ] e. Judiciary "Avoid Phishing Scams" Training
+- [ ] 18. Use of Judiciary Issued Identification Badges
+- [ ] 19. Pre-Tax Bus Pass Enrollment Form, Frequently Asked Questions (FAQs) and Employee Schedule
+- [ ] 20. Certificate of Hawai‘i Residency (PPD would have the new employee sign this form on the FIRST day of employment)
+- [ ] 21. Guidance on the Use of Social Media
+- [ ] 22. Workplace Dispute Resolution Program (WDRP) flyer and FAQs
+
+:::
+
+###	Day 1 Logistics
+
+#### ID Badge and remaining HR forms
+
+On the morning of your first day, you will meet with the Employee Services Division to pick up your ID badge and complete the Hawaii Residency form. The Research and Planning division head will schedule this meeting ahead of time and let you know when HR is expecting you.
+
+####	Office Keys
+
+::: columns
+
+::: {.column width="40%"}
+
+<br>
+Supreme Court bailiff and jack-of-all trades Curt Shibata, whose versatility is only exceeded by his selflessness, will issue you office keys. Curt requires two actions before he hands over the keys: a) Reading the "Use for Keys" memo (see below) and b) Signing the key sign-out sheet. After you've read the memo, please email Curt at curt.m.shibata.
+
+::: 
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+
+![Curt Shibata, middle, flanked by Administrative Director Rod Maile on the left and Chief Justice Mark Recktenwald on the right, receiving the 2023 Distinguished Service Award.](Curt_Shibata.jpg)
+
+::: 
+::: 
+<br>
+Here is the "Use of Keys" memo:
+![Use of Keys Memo](Office Keys Memo.pdf){width="100%" height="600px" fig-align="center"}
+
+####	Computer, email, and network drives
+
+Our IT Department will set up a network account for you that will allow you to log into most networked computers. They will also set up your email account.  
+
+Your login username and password for computer/network access and email should be the same.
+
+You should also have access to two network drives:  
+**G Drive**: A common drive shared by all within a division/department.  Most users within a division/department have full rights to folders on G.  
+**H Drive**: A drive for work related files. Only you and the server administrators have access.
+
+Much of our collaborative work will also be stored on private repositories on Github and OSF.
+
+###	Building 
+![Ali`iolani Hale](aliiolani_hale.jpg){width=81% fig-align="center"}
+
+We work here - not bad, right? [Ali'iolani Hale](https://hilo.hawaii.edu/wehe/?q=ali%CA%BBiolani), or more informally the Supreme Court Building, was built between 1871 and 1874. The building [celebrated](https://www.courts.state.hi.us/news_and_reports/2024/05/150-years-of-ali%CA%BBiolani-hale-celebrated-with-historical-re-enactment-tours) [its](https://historichawaii.org/2022/09/23/aliiolanihale-2-2/) [150th](https://www.jhchawaii.net/event/celebrating-150-years-of-law-and-justice-at-aliiolani-hale/) [birthday](https://www.youtube.com/watch?v=7Wi_geJeLiI) in the spring of 2024. Here's our address:  
+
+Hawai'i State Judiciary  
+417 South King Street  
+Honolulu, Hawai'i 96813
+
+#### Hours
+
+The building is open to the public from 7:45AM to 4:30PM. Outside of these hours, the doors lock, so if you need access to the building, make sure to have your badge, which doubles as a magnetic access card to the building. 
+
+#### Entrances
+
+There are three entrances. Checkpoint A is the front entrance facing King Street. Checkpoint B is on the Diamond Head side of the building, closer to Queen Street. Location C is also on the Diamond Head side but closer to King Street.
+
+Note that in the pdf below, King Street is along the right side of the map and Queen Street the left.
+
+![](building_entrances.pdf){width="100%" height="600px" fig-align="center"}
+
+### Security and Emergency Management
+
+The Security and Emergency Management Office's internal website is here: <http://10.220.33.180/security/>
+
+You can sign up for Txtwire to receive text or email emergency notifications here: <http://10.220.33.180/security/txtwire/>
+
+Here is a video about security courtesy of HR:  
+<!-- Method A: use video shortcut from Quarto: https://quarto.org/docs/authoring/videos.html -->
+<!-- poster doesn't work, video player is OK -->
+<!-- {{< video https://cdn.screencast.com/uploads/g000302BX7cLutBa49W6z0vVngMjy/Security%20and%20Emergency%20Management.mp4?sv=2022-11-02&st=2024-10-26T03%3A10%3A50Z&se=2024-10-27T03%3A10%3A50Z&sr=b&sp=r&sig=MNA2kvu0ipd4O%2FawJbdh8qgZrbZbiqREB7atcFJmk1c%3D width="800" height="600" >}} -->
+
+<!-- Method B: https://github.com/quarto-dev/quarto-cli/discussions/3060 -->
+<!-- Poster works, video is good, but puts a link to download under video which i don't like -->
+<!-- ![](https://cdn.screencast.com/uploads/g000302BX7cLutBa49W6z0vVngMjy/Security%20and%20Emergency%20Management.mp4?sv=2022-11-02&st=2024-10-26T03%3A10%3A50Z&se=2024-10-27T03%3A10%3A50Z&sr=b&sp=r&sig=MNA2kvu0ipd4O%2FawJbdh8qgZrbZbiqREB7atcFJmk1c%3D){width="800" height="600"} -->
+
+<!-- Method C: embed iframe from share code on from HR/screencast website-->
+<!-- poster not needed as it embeds whole page, player is good, but it embeds whole page -->
+<!-- copy and paste. Modify height and width if desired. -->
+<!-- <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html"  -->
+<!--         style="overflow:hidden;" src="https://app.screencast.com/KmHqNyhoWXRmy" height="600" width="800" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> --><!-- copy and paste. Modify height and width if desired. -->
+
+<!-- Method D: borrow embed share code from Method C, copy link when hovering over link on HR orientation video page (don't click on link and copy from address bar on new page as it is a different link as it atuo-redirects) -->
+<!-- poster doesn't work, video is good -->
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+        style="overflow:hidden;" src="https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/07f6098e-e6f0-499f-8552-3daa4f83ae3d/embed" height="600" width="800" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<!-- Method E: couldn't get video to play, although poster works, I think the issue is with the type attribute -->
+<!--  <video height="600" width="800" poster="dress_policy_poster.JPG" controls> -->
+<!--   <source src=""https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/f2ff881c-df0c-4221-946e-86dd2202193c/embed" type="video/webm"> -->
+<!-- </video>  -->
+
+###	Transportation and Parking
+
+#### Buses
+Ali'iolani Hale is conveniently located near several major bus stops. Two of the closest bus stops, at King and Punchbowl in front of the building and Queen and Mililani behind it, intersect with 43 routes. The Judiciary also offers a pre-tax bus pass, which brings down the effective cost of taking the bus.
+
+![Bus stops near Ali`iolani Hale](busses_final.png)
+
+For route information, visit <https://www.thebus.org/Route/Routes.asp>.
+
+#### Biking
+
+*Under construction!*
+
+#### Parking
+If taking a car, there are several options for parking in private garages.
+
+* 345 Queen Street parking garage (monthly and daily parking rates, including early-bird rate)
+* SP+ Parking garage along Halekauwila Street (unsure what kinds of rates are available)
+* *under construction*
+
+If you are unable to find a private garage with space, metered parking is available in front of the Territorial Building next to ours, in front of the post office between Merchant Street and King Street, along Mililani Street, and along Punchbowl Street. 
+
+![Parking near Ali`iolani Hale](metered_parking.png)
+
+There is parking available through the Judiciary, but there is a (very long) wait list. Kanani Kawika (katie.k.kawika@courts.hawaii.gov), the head secretary for the Administrative Director, manages the list. If you expect to drive, it may be worth putting your name down on the list.
+
+###	Work hours, Holidays, and Electronic Leave System (ELS)
+
+#### Work hours
+
+Normal work hours are 7:45AM to 4:30PM. Many people work an alternate schedule, and this division supports alternate schedules so long as you are available for meetings, which typically occur during normal work hours.
+
+#### Holiday calendar
+
+![](State-Holidays-2024-2025.pdf){width=100% height=600px}
+
+
+#### Electronic Leave System (ELS)
+To submit a sick, vacation, or other request for time off, please use the internal [ELS portal](http://domapps01.courts.state.hi.us/Apps/ELS/PPD_ELS.nsf). As of October 2024, you must browse to it in an IE tab in Edge. The platform is old and does not work outside of IE. 
+
+Here is an ELS orientation video courtesy of HR:  
+
+<!-- ![](https://cdn.screencast.com/uploads/g000302cChWzKOmdoolc9ZsFIOAua/ELS%20-%20Electronic%20Leave%20System.mp4?sv=2022-11-02&st=2024-10-27T00%3A33%3A58Z&se=2024-10-28T00%3A33%3A58Z&sr=b&sp=r&sig=D%2Bow%2B8xE7pCh3QtgDLGlEB%2Bid14cyyrZf%2FgIIcCiQTw%3D){poster="els_poster.JPG"} -->
+
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html"
+        style="overflow:hidden;" src="https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/08dbe3f4-1b96-4cc7-b1fd-64019e3f7b1c/embed" height="600" width="800" poster="els_poster.JPG" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+#### Advance notice when taking vacation
+For longer vacation (3 days or more), please try to provide at least two weeks notice; for short vacation (1-2 days), at least 48 hours notice is fine. For a partial day, it is fine to give notice as late as the morning of. 
+
+###	Dress policy
+Please see the [dress policy](http://10.220.33.180/wp-content/uploads/2015/01/spac13.pdf).
+
+Here is a video about the dress policy courtesy of HR:  
+
+<!-- ![](https://cdn.screencast.com/uploads/g000302fcaktPIFFxeiZGsSXwYhhc/SPAC%2013%20-%20Dress%20Policy.mp4?sv=2022-11-02&st=2024-10-27T00%3A46%3A22Z&se=2024-10-28T00%3A46%3A22Z&sr=b&sp=r&sig=%2Bw%2BbOGDJzfOYyT5Kmla09Qpvg8YDxReJMogon0kl2to%3D){width="800" height="600" poster="dress_policy_poster.JPG"} -->
+
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html"
+        style="overflow:hidden;" src="https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/f2ff881c-df0c-4221-946e-86dd2202193c/embed" height="600" width="800" poster="dress_policy_poster.JPG" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+###	Equipment, furniture, and office supplies
+Please let us know if/when any of the furniture or equipment is not in good working order. We will try to order a replacement as soon as possible. It is important to us that you have what you need to work comfortably and successfully. Same goes for office supplies.
+
+####	Computers: Hardware and software
+This is, for better or worse, a Microsoft Windows institution. When it comes time to purchase new machines, we will discuss as a group what models to request. It has been relayed in the past that ITSD generally prefers uniformity in hardware as it helps them with troubleshooting. Customization (additional RAM or storage, GPUs, etc.) is definitely encouraged.
+
+As a division, we aim to use FOSS. Proprietary software is always an option, especially when a FOSS alternative is either unavailable or not as developed.
+
+####	Physical inventory
+The Judiciary requires a yearly physical inventory of Judiciary purchased items. *Please let me know if things need to be moved around* (e.g., towers, monitors, printers, other equipment, furniture, large office supplies, etc.). I have to keep track of each item's location for the inventory.
+
+###	Lunch/food
+This division happens to know the best restaurants along the dimensions of quality and value and their intersection. This is classified information, not to be shared in this manual, but can be discussed in private. Beyond this top secret list, here are some lunchtime locations with multiple eateries:
+
+* Eateries in Topa Tower
+* Merchant Street Food Alley
+* Eateries in Bishop Square
+* Eateries along Fort Street Mall
+* Eateries in Pacific Guardian Center
+* Pioneer Plaza Food Court
+* Chinatown (multiple food courts, especially in the Muanakea area)*
+* [H Mart Market Eatery Food Hall](https://www.yelp.com/biz/market-eatery-honolulu-2)*
+* [Salt at Our Kaka'ako](https://saltatkakaako.com/merchants/)*
+* [Restaurant Row](https://waterfrontplazahawaii.com/whats-here/)*
+
+![* Outside the area of the map.](food_map2.png)
+
+<div style="color:white;">
+
+*You found it! Classified list revealed!*
+
+* Maguro Brothers
+* Tio's Tamales
+* Sabal
+* O'Kims
+* OEC Cafe
+* Marukame Udon
+* Kamana Kitchen
+
+</div>
+
+## Trainings
+There are five required trainings. Please visit the Judicial eLearning Center to complete the trainings. Information on how to login and access the trainings can be found [here](http://10.220.33.180/training-and-education/).
+
+* Judiciary Equal Employment Opportunity (EEO) Training 
+    + Discrimination/Harassment-Free Workplace Policy online training (1)
+    + Recognizing and Reducing Bias online training (2)
+* Hawaii State Ethics Commission Training (3)
+* Judiciary Cybersecurity Training
+    + Cybersecurity at Work (4)
+    + Judiciary Cybersecurity Training: Avoiding Phishing Scams (5)
+
+## Judiciary 101
+### Judiciary Overview
+This Judiciary Overview is courtesy of HR:  
+<!-- {{< video https://cdn.screencast.com/uploads/g0003026kHqS0fvQU0WtSDJ2enTbN/luma.mp4?sv=2022-11-02&st=2024-10-25T08%3A11%3A30Z&se=2024-10-26T08%3A11%3A30Z&sr=b&sp=r&sig=sJ1%2FBxApZqSF918ri6Dx0Nf1aULWrp7aOL4YM7Jroe0%3D width="800" height="600" >}} -->
+
+<!-- copy and paste. Modify height and width if desired. -->
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+        style="overflow:hidden;" src="https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/9e825d4c-fc63-4797-8ae4-1c6407166180/embed" height="600" width="800" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        
+###	Intranet
+Bookmark: <http://10.220.33.180/>  
+
+Here is a video about the Intranet, courtesy of HR:  
+
+<!-- {{< video https://cdn.screencast.com/uploads/g000302cN0o4fkkQ9HvkLNumZaomG/200204%20Navigating%20the%20Judiciary%20Intranet.mp4?sv=2022-11-02&st=2024-10-25T19%3A26%3A39Z&se=2024-10-26T19%3A26%3A39Z&sr=b&sp=r&sig=945yq%2FP6FlBJ6WkTxkmff6CcnEWMlIg0XpvuJt15IgM%3D width="800" height="600" >}} -->
+
+<!-- copy and paste. Modify height and width if desired. -->
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+        style="overflow:hidden;" src="https://www.screencast.com/users/JEOHawaii/folders/Camtasia%20Studio/media/75176f06-e4f8-42e5-8405-8c4a76ba6300/embed" height="600" width="800" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+###	Judictionary
+*Under construction!*
+A dictionary/encyclopedia for the seemingly bottomless list of terms, acronyms, abbreviations, codes, and other novel sounds you'll hear around the Judiciary. The tool is intended not just to decode but also to provide plain language descriptions for technical terms, legal or otherwise, you may come across at the Judiciary.
+
+## Meeting people, visiting places
+
+### Office neighbors in Ali`iolani Hale
+During the first week, we will introduce you to as many people as possible in our building, making it nearly impossible to remember everyone's name although everyone will know yours. Some people you won't see as much as others, so don't hesitate to ask us for a reminder about someone's name.
+
+Ali`iolani Hale houses the Policy and Planning Department (PPD), Criminal Justice Research Institute (CJRI), most of Intergovernmental and Community Relations Department (ICRD), and the office of the Administrative Director (ADC).
+
+PPD includes 5 divisions:
+```{dot} 
+graph G {
+  layout=neato
+label=< <B>Policy and Planning Department</B> >
+fontsize=36
+"Budget" [URL="http://10.220.33.180/budget/", fontcolor=blue, fontsize=36]
+"Research and\nPlanning" [fontsize=36]
+"Legislative Affairs\nand Special Projects (LASP)" [URL="http://10.220.33.180/lco/", fontcolor=blue, fontsize=36]
+ Audit [fontsize=36]
+ CIP [fontsize=36]
+ 
+  "Research and\nPlanning" -- "Legislative Affairs\nand Special Projects (LASP)";
+  "Legislative Affairs\nand Special Projects (LASP)" -- Audit;
+  Audit -- CIP;
+  CIP -- Budget;
+  "Research and\nPlanning" -- Budget;
+  
+  sep="0,-5"
+overlap=false
+}
+```
+
+<!-- * [Budget](http://10.220.33.180/budget/) -->
+<!-- * Capital Improvements Program (CIP) -->
+<!-- * [Legislative Affairs and Special Projects](http://10.220.33.180/lco/) (LASP) -->
+<!-- * Audit -->
+<!-- * Research and Planning -->
+
+<!-- ```{r} -->
+<!-- #| warning: false -->
+<!-- #| echo: false -->
+<!-- # Libraries -->
+<!-- library(igraph) -->
+<!-- library(networkD3) -->
+<!-- library(dplyr) -->
+
+<!-- # create a dataset: -->
+<!-- # data <- dplyr::data_frame( -->
+<!-- #   from=c("Research and\nPlanning", "Research and\nPlanning", "Budget", "CIP", "Audit", "Legislative Affairs"), -->
+<!-- #   to=c("Budget", "Legislative Affairs", "CIP", "Audit", "Legislative Affairs", "Research and\nPlanning") -->
+<!-- # ) -->
+<!-- data <- data_frame( -->
+<!--   from=c("Audit", "Legislative Affairs\n and Special Projects", "Budget","CIP", "CIP"), -->
+<!--   to=c("Legislative Affairs\n and Special Projects", "Planning and Research", "Planning and Research", "Audit", "Budget") -->
+<!-- ) -->
+
+<!-- # Plot -->
+<!-- p <- simpleNetwork(data, height=600, width=1200, fontSize = 24, linkDistance = 100, charge = -2000, nodeColour = "black") -->
+
+<!-- p -->
+<!-- ``` -->
+
+ICRD offices located in Ali'iolani Hale:
+
+* [Judicial History Center](https://www.jhchawaii.net/) (1st floor)
+* [Law Library](https://histatelawlibrary.com) (1st floor)
+* [Center for Alternative Dispute Resolution](http://10.220.33.180/cadr/) (CADR)
+* Communications and Community Relations (CCR)
+* Office of the Staff Attorney
+
+####	Tour of the Judicial History Center
+The Judicial History Center (JHC) lives on the first floor of our building. We'll aim to tour the JHC in the first month so that you can learn about the rich history of the Judiciary in Hawai`i. Please check our their [website](https://www.jhchawaii.net/).
+
+###	Legislative hearings
+After the legislative session starts, we will head over to the Hawai`i State Capitol to attend hearings of the [House Judiciary and Hawaiian Affairs Committee](https://www.capitol.hawaii.gov/legislature/committeepage.aspx?comm=JHA) and the [Senate Judiciary Committee](https://www.capitol.hawaii.gov/legislature/committeepage.aspx?comm=JDC) so you can learn about how the Judiciary and the Legislature work together to revise bills that create or amend law and shape an appropriation (funding) bill.
+
+###	Court observation
+Over the first year, we will make regular visits to the courts so that you can learn about court operations, legal procedure, and issues surrounding data entry.  It is a valuable opportunity to meet people on the court side and establish relationships with them.
+
+* Circuit Court Criminal
+* Circuit Court Civil
+* District Court Criminal
+* District Court Civil
+* District Court Traffic (crim and non-crim)
+* Specialty Courts (Drug, Mental Health, and Veterans Treatment Court)
+* Appellate Courts
+
+We will also visit the court operations and client services (probation) offices to learn about their work.
+
+## Research at the Judiciary
+### Our research circle
+
+Here are some names that are helpful to know as we frequently work with them. Our circle has grown over the past 5 years and we hope it will continue to expand as we establish new collaborations. Depending on their availability, we will try to schedule meetings with the people below over your first few months.
+
+#### Administration
+*under construction!*  
+[Criminal Justice Research Institute (CJRI)](http://cjrihawaii.com/): Erin Harbinson and team (Sam, Aerielle, Mariah)  
+JIMS Production Support (PS): Sue Pindavanija and her team  
+Special Assistants to the Administrative Director: Angela Min and Lisa Lum  
+[Law Librarian](https://histatelawlibrary.com/): Jenny Silbiger
+
+####	Courts
+*under construction!*  
+1C: Michelle Acosta, Emma Mateo-Dias, Ulu Meade-Viernes, Judge Castagnetti, Judge Johnson, Judge Viola, Judge May, Jenn Awong, Jessica Orr, Korin  Okada  
+2C: Ernest Delima, Malia Ferreira, Judge Cahill, Susan Gushiken  
+3C: Cheryl Salmo, Jeri LaGuire  
+5C: Kari Yamashiro, Lisa Kimura  
+Probation: Brook and Dwight (1C), Marsha and Craig (2C), Dean and Robert (3C), Renette and Tori Ann (5C)  
+Appellate: Jaye Atiburcio, Ginger Pana, Elizabeth Zack, Thomas Berger, Randy Pinal, CJ
+
+#### Other agencies
+*under construction!*  
+We have also worked with The [Hawaii Criminal Justice Data Center](https://ag.hawaii.gov/hcjdc/) (HCJDC), [Department of Corrections and Rehabilitation](https://dcr.hawaii.gov/) (DCR, formely the Department of Public Safety), [Honolulu Police Department](https://www.honolulupd.org/), and the AG Office's [Research and Statistics](https://ag.hawaii.gov/cpja/rs/) branch.
+
+We also interact with the [National Center for State Courts](https://www.ncsc.org/) and the [Bureau of Justice Statistics](https://bjs.ojp.gov/).
+
+### Judiciary Case Management Systems (CMS) and databases
+
+The primary data system for court records is known as the Judiciary Information Management System (JIMS). The GUI is known as [**JIMS Portal**](http://jimsicc1.courts.state.hi.us/JIMSWeb/login.iface) and the underlying database, which we interact with regularly for extracting data, is known as the **JIMS Oracle Database** (Oracle 19c as of May 2024). The "reporting" database we have access to is in fact a mirror of the JIMS Production database, and it is on a one day delay compared to the Production database, so new court activity does not appear until the next day. We use Oracle SQL Developer as our IDE (version 23.1.1.345 as of 2024/11/04; <span style="color:red;">N.B.: There is a major bug in v24.3.0.284 that prevents exporting query results to xlsx or csv</span>). 
+
+::: {.column-page layout="[47,-6,47]"}
+![JIMS Portal](JIMS_portal.png)
+
+![JIMS Oracle Database](JIMS_oracle_DB.png)
+:::
+A JIMS user ID and password are needed to access JIMS Portal. Setup is also required to access the underlying database. If these are not already set up when you start, or you have login issues, please notify the division head.
+
+We rely on data from a number of other databases, including **Trust Accounting (TA)**, which stores data on fines, fees, and restitution, and rests on a Cobol-based system, and [**Caseload Explorer (CE)**](http://apdvoca2/CaseloadExplorer/Login.aspx?ReturnUrl=%2fCaseloadExplorer%2fTreeView.aspx), which is the case management system used by Probation. The underlying database for CE is called **CX** and we use SQL Server Management Studio (SSMS) 19 as our IDE. You may need access to these at some point depending on what projects you lead.
+
+### JIRA and Sharepoint/Confluence: Issue tracking and Knowledge Base
+***Under construction! Discuss dual role of JIRA for our division -> submit and receive tickets ***
+
+ITSD uses [JIRA Cloud](https://hawaiijudiciary.atlassian.net/servicedesk/customer/portals) for issue-tracking. Whenever you submit a ticket, it goes to their helpdesk, who direct the ticket to the appropriate IT staff. ***Whenever you have a hardware, software, or database issue, first share it with the division to see if we can resolve it before bringing it to ITSD.*** A ticket is a last, not a first, resort.
+
+How do I submit a ticket? Submit an email to <helpdesk.requests@courts.hawaii.gov> with your issue.
+
+In December of 2023, the Judiciary transitioned from [JIRA on-prem](https://jira.courts.state.hi.us:8443/secure/Dashboard.jspa) to JIRA Cloud. The JIRA on-prem is archived and contains a wealth of information on old projects. Having an account to the historical tickets will likely be useful.  
+
+When the Judiciary switched to JIRA Cloud, it also stopped supporting [Confluence](<http://confluence.courts.state.hi.us:8090/>), which had been used for project management and as a knowledge base for JIMS and other applications. It also served as a hub for group forums. Having access to this will also likely be useful.  
+
+Project management is now handled by [Sharepoint](<https://courtshawaii.sharepoint.com/_layouts/15/sharepoint.aspx>).
+
+### Project management, version control
+####	Project management: Github and OSF
+*Under construction!*
+
+####	Version control: Github
+*Under construction!*
+
+####	For communication: Slack
+*Under construction!*
+
+### Policies
+####	LLMs and AI-augmented workflows
+If you use any type of machine learning during the course of your research, including but not limited to generating code or text, **document what output/throughput was generated using ML**. Please make sure you cite model, version, and date of query.
+
+##	Resource Library
+*Under construction!*
+
+::: {.callout-note title="Expand to view Judiciary resources" collapse="true"}
+
+- [Intranet](http://10.220.33.180/)
+- [Judiciary website](https://www.courts.state.hi.us/)
+- [Outlook Webmail](https://outlook.office365.com/mail/inbox)
+- [Phone directory](http://10.220.33.180/phonedir/judiciary-phone-directories/) - "does not reflect the official Judiciary organizational structure"
+- [JIMS Portal](http://jimsicc1.courts.state.hi.us/JIMSWeb/login.iface) - court case management system
+- [Caseload Explorer](http://apdvoca2/CaseloadExplorer/TreeView.aspx) - probation case management system
+- [JIRA cloud](https://hawaiijudiciary.atlassian.net/servicedesk/customer/portals) - new issue-tracking platform
+- [JIRA on-prem](https://jira.courts.state.hi.us:8443/secure/Dashboard.jspa) - old issue-tracking platform, good for historical info
+- [Sharepoint](https://courtshawaii.sharepoint.com/_layouts/15/sharepoint.aspx) - new knowledge base
+- [Confluence](http://confluence.courts.state.hi.us:8090/) - old knowledge base, good for historical info
+- [ELS](http://domapps01.courts.state.hi.us/Apps/ELS/PPD_ELS.nsf) - vacation, sick, or other leave requests
+- [Oracle Peoplesoft](https://hihp92.hip.hawaii.gov/psp/hihp92/?cmd=login) - pay stubs, W-2
+- [Human Resources Employee Orientation Videos](http://10.220.33.180/human-resources-orientation-videos/)
+
+:::
+
+::: {.callout-note title="Expand to view Legislative resources" collapse="true"}
+- [Legislative Affairs and Special Projects (LASP)](http://10.220.33.180/lco/) - Judiciary division that tracks bills and helps the Judiciary prepare for the Legislative session
+- [Judiciary Legislative update](https://www.courts.state.hi.us/news_and_reports/legislative_update) - List of measures on which the Judiciary provided testimony
+- [Legislature](https://www.capitol.hawaii.gov/)
+- [Legislative Reference Bureau (LRB)](https://lrb.hawaii.gov/)
+- [National Conference of State Legislatures (NCSL)](https://www.ncsl.org/)
+- [Hawaii Revised Statutes](https://law.justia.com/codes/hawaii/) - state law
+- [Hawaii Administrative Rules (HAR)](https://cca.hawaii.gov/hawaii-administrative-rules/) - administrative rules
+- [Local ordinances](https://) - county law
+- [House of Representative hearings](https://www.youtube.com/@hawaiihouseofrepresentatives) - Youtube channel
+- [Senate hearings](https://www.youtube.com/@HawaiiSenate) - Youtube channel
+- [Hearing Notices](https://www.capitol.hawaii.gov/account/login.aspx?return=/account/hearingnotice.aspx) - recommend adding
+- [Legislative hearings broadcasts](https://www.capitol.hawaii.gov/broadcasts.aspx) - archive of broadcasts
+your email to receive at least Senate JUD and House JHA hearing notices
+:::
+
+::: {.callout-note collapse="true"}
+
+## Expand to view judicial administration and policy resources
+
+- [National Center for State Courts (NCSC)](https://www.ncsc.org/)
+- [NCSC Trends in State Courts](https://www.ncsc.org/microsites/trends/home)
+- [Institute for the Advancement of the American Legal System (IAALS)](https://iaals.du.edu/)
+- [National Civil Justice Institute (NCJI)](https://ncji.org/)
+- [Council of State Governments Justice Center](https://csgjusticecenter.org/)
+- [Judicature](https://judicature.duke.edu/) -  journal focused on the judiciary, the administration of justice, and the rule of law
+- [Council of Criminal Justice](https://counciloncj.org/)
+
+:::
+
+::: {.callout-note collapse="true"}
+##	Expand to view justice research resources
+- [National Institute of Justice](https://nij.ojp.gov/) - NIJ is the research, development and evaluation agency of the U.S. Department of Justice
+- [NIJ's Crime Solutions](https://www.crimesolutions.gov/) - NIJ's web-based clearinghouse of programs and practices and a process for identifying and rating those programs and practices
+- [Straight Talk on Evidence](https://www.straighttalkonevidence.org/) - Arnold Venture's digest of recent program evaluation findings, with a focus on RCTs
+- [Campbell Crime and Justice Coordinating Group](https://campbellcollaboration.org/crime-and-justice-group) - conducts systematic reviews of high-quality research on methods to reduce crime and delinquency and improve the quality of justice
+- [Annals of Research and Knowledge](https://ark.allrise.org/) - a searchable database containing information on evidence-based and promising programs for persons involved in the criminal justice system
+- [Criminal Justice Expert Panel](https://cjexpertpanel.org/)
+- [Arnold Ventures - criminal justice research](https://www.arnoldventures.org/work/criminal-justice)
+- [Arnold Ventures - Evidence evaluation](https://www.arnoldventures.org/work/evidence-evaluation)
+- [Arnold Ventures - Evidence based programs](https://evidencebasedprograms.org/)
+- [Vera Institute](https://www.vera.org/) - conducts data analysis and research on criminal justice system
+- [Center for Effective Public Policy](https://cepp.com/) - focuses on pretrial policy and research
+- [Coalition for Evidence-based Policy](https://www.evidencebasedpolicy.org/) - focuses on evidence-based initiatives broadly, including the justice system
+- [RAND](https://www.rand.org/topics/courts.html) - think tank and research institute
+- [Pew Charitable Trusts](https://www.pewtrusts.org/en/) - conducts research and polling
+- [Results for America](https://results4america.org/)
+- [Ideas42](https://www.ideas42.org/) - conducts research in behavioral science, especially social psychology and behavioral economics, and recommends evidence-based policies
+- [Advancing Pretrial Justice](https://advancingpretrial.org/)
+- [Prison Policy Initiative](https://www.prisonpolicy.org/) - Research and data on incarceration
+- [The Sentencing Project](https://www.sentencingproject.org/) - Criminal justice data
+
+Academic labs
+
+- [Justice Collaboratory](https://www.justicehappenshere.yale.edu/)
+- [Access to Justice Lab](https://a2jlab.org/)
+- [Data Collaborative for Justice](https://datacollaborativeforjustice.org/)
+- [Criminal Justice Innovation Lab](https://cjil.sog.unc.edu/)
+- [Public Safety Lab](https://publicsafetylab.org/)
+- [Open Law Lab](https://www.openlawlab.com/)
+- [The Gov Lab](https://thegovlab.org/project/project-data-driven-criminal-justice)
+- [Justice Tech Lab](https://justicetechlab.org/)
+- [Evidence-to-Impact Collaborative](https://evidence2impact.psu.edu/)
+
+Court data and standards
+
+- [Justice Counts by CSG Justice Center](https://justicecounts.csgjusticecenter.org/)
+- [Court Statistics Project by NCSC](http://www.courtstatistics.org/)
+- [National Open Data Standards by NCSC](https://www.ncsc.org/services-and-experts/areas-of-expertise/court-statistics/national-open-court-data-standards-nods)
+- [Measures for Justice](https://measuresforjustice.org/)
+
+Planning and forecasting
+
+- 
+<!-- - [IARPA ForeST Program](https://www.iarpa.gov/research-programs/forest) -->
+<!-- - [Prediction Markets](https://en.wikipedia.org/wiki/Prediction_market) -->
+<!-- - [Overview of forecasting](https://80000hours.org/problem-profiles/improving-institutional-decision-making/) -->
+
+Funding Opportunities
+
+- [Arnold Ventures](https://www.arnoldventures.org/grantees)
+- [Byrne JAG](https://ag.hawaii.gov/cpja/gp/byrnejag/)
+- [DOJ Office of Justice Programs (OJP)](https://www.ojp.gov/funding/explore/current-funding-opportunities)
+- [Bureau of Justice Assistance](https://bja.ojp.gov/funding/current)
+- [Bureau of Justice Statistics](https://bjs.ojp.gov/funding/current)
+
+:::
+
+::: {.callout-note collapse="true"}
+##	Expand to view listservs/newsletters
+Many of the judicial administration and justice research resources have listservs/newsletters that are worth signing up for. A few that are highly recommended:  
+- NCSC  
+- Pew  
+- Arnold Ventures
+:::
+
+:::{.callout-note collapse="true"}
+## Expand to view unsorted
+
+- http://icis.hawaii.gov/
+- https://ag.hawaii.gov/hcjdc/
+- https://hijis.hawaii.gov/
+- https://hcsoc.hawaii.gov/
+- http://cjrihawaii.com/
+:::
+
+## Goals for the first week and month
+
+Here is a list of short-term goals that we hope will help structure your start and set you up to succeed in your research. We are here to help you meet these goals and will be assisting with setting up informal introductions, scheduling more formal meetings with research partners, and sharing materials to help you acquire expertise with the courts in general and the Hawai`i State Judiciary in particular.
+
+First week:
+
+(@) Get set up with [ID badge](#id-badge-and-remaining-hr-forms), [keys](#office-keys), [computer account, email](#computer-email-and-network-drives), and [access to JIMS Portal and DB](#judiciary-case-management-systems-cms-and-databases)
+(@) [Meet the other divisions](#office-neighbors-in-aliiolani-hale) in our department and in ICRD in our building
+(@) Explore the [Judiciary intranet](#intranet), [Judiciary website](https://www.courts.state.hi.us/), and [Resource Library](#resource-library)
+(@) Explore [JIMS Portal and the DB](#judiciary-case-management-systems-cms-and-databases) to better understand data and case records
+(@) Complete 5 required [trainings](#trainings)
+(@) Provide a list of any [equipment, furniture, or supplies](#equipment-furniture-and-office-supplies) needed or in need of replacement to division head
+
+First month:  
+
+1. Tour the [Judicial History Center](#tour-of-the-judicial-history-center)
+2. Begin [court observations](#court-observation), and if the Legislative session has begun, attend [hearings](#legislative-hearings)
+3. [Meet with people](#our-research-circle) in our research orbit
+
+During the first week and throughout the first month, there will be regular meetings to discuss and begin first projects.
