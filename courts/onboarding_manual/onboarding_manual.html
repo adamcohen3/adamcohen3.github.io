@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#project-management-github-and-osf" id="toc-project-management-github-and-osf" class="nav-link" data-scroll-target="#project-management-github-and-osf"><span class="header-section-number">5.4.1</span> Project management: Github and OSF</a></li>
   <li><a href="#version-control-github" id="toc-version-control-github" class="nav-link" data-scroll-target="#version-control-github"><span class="header-section-number">5.4.2</span> Version control: Github</a></li>
-  <li><a href="#for-communication-slack" id="toc-for-communication-slack" class="nav-link" data-scroll-target="#for-communication-slack"><span class="header-section-number">5.4.3</span> For communication: Slack</a></li>
+  <li><a href="#for-communication-zulip" id="toc-for-communication-zulip" class="nav-link" data-scroll-target="#for-communication-zulip"><span class="header-section-number">5.4.3</span> For communication: Zulip</a></li>
   </ul></li>
   <li><a href="#policies" id="toc-policies" class="nav-link" data-scroll-target="#policies"><span class="header-section-number">5.5</span> Policies</a>
   <ul class="collapse">
@@ -654,15 +654,58 @@ We have also worked with The <a href="https://ag.hawaii.gov/hcjdc/">Hawaii Crimi
 </div>
 <p>A JIMS user ID and password are needed to access JIMS Portal. Setup is also required to access the underlying database. If these are not already set up when you start, or you have login issues, please notify the division head.</p>
 <p>We rely on data from a number of other databases, including <strong>Trust Accounting (TA)</strong>, which stores data on fines, fees, and restitution, and rests on a Cobol-based system, and <a href="http://apdvoca2/CaseloadExplorer/Login.aspx?ReturnUrl=%2fCaseloadExplorer%2fTreeView.aspx"><strong>Caseload Explorer (CE)</strong></a>, which is the case management system used by Probation. The underlying database for CE is called <strong>CX</strong> and we use SQL Server Management Studio (SSMS) 19 as our IDE. You may need access to these at some point depending on what projects you lead.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 47.0%;justify-content: center;">
+<figure class="figure">
+<p><a href="CE.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Caseload Explorer (CE)"><img src="CE.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Caseload Explorer (CE)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 6.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-figure quarto-figure-center" style="flex-basis: 47.0%;justify-content: center;">
+<figure class="figure">
+<p><a href="CX.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="CE Database (CX)"><img src="CX.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">CE Database (CX)</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="jira-and-sharepointconfluence-issue-tracking-and-knowledge-base" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="jira-and-sharepointconfluence-issue-tracking-and-knowledge-base"><span class="header-section-number">5.3</span> JIRA and Sharepoint/Confluence: Issue tracking and Knowledge Base</h3>
 <p><strong><em>Under construction! Discuss dual role of JIRA for our division -&gt; submit and receive tickets </em></strong></p>
 <p>ITSD uses <a href="https://hawaiijudiciary.atlassian.net/servicedesk/customer/portals">JIRA Cloud</a> for issue-tracking. Whenever you submit a ticket, it goes to their helpdesk, who direct the ticket to the appropriate IT staff. <strong><em>Whenever you have a hardware, software, or database issue, first share it with the division to see if we can resolve it before bringing it to ITSD.</em></strong> A ticket is a last, not a first, resort.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="jira_cloud.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="JIRA Cloud"><img src="jira_cloud.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">JIRA Cloud</figcaption>
+</figure>
+</div>
 <p>How do I submit a ticket? Submit an email to <a href="mailto:helpdesk.requests@courts.hawaii.gov" class="email">helpdesk.requests@courts.hawaii.gov</a> with your issue.</p>
 <p>In December of 2023, the Judiciary transitioned from <a href="https://jira.courts.state.hi.us:8443/secure/Dashboard.jspa">JIRA on-prem</a> to JIRA Cloud. The JIRA on-prem is archived and contains a wealth of information on old projects. Having an account to the historical tickets will likely be useful.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="jira_on-prem.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="JIRA on-prem"><img src="jira_on-prem.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">JIRA on-prem</figcaption>
+</figure>
+</div>
 <p>When the Judiciary switched to JIRA Cloud, it also stopped supporting <a href="http://confluence.courts.state.hi.us:8090/">Confluence</a>, which had been used for project management and as a knowledge base for JIMS and other applications. It also served as a hub for group forums. Having access to this will also likely be useful.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="confluence.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Confluence"><img src="confluence.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Confluence</figcaption>
+</figure>
+</div>
 <p>Project management is now handled by <a href="https://courtshawaii.sharepoint.com/_layouts/15/sharepoint.aspx">Sharepoint</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="sharepoint.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Sharepoint"><img src="sharepoint.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Sharepoint</figcaption>
+</figure>
+</div>
 </section>
 <section id="project-management-version-control" class="level3" data-number="5.4">
 <h3 data-number="5.4" class="anchored" data-anchor-id="project-management-version-control"><span class="header-section-number">5.4</span> Project management, version control</h3>
@@ -674,9 +717,9 @@ We have also worked with The <a href="https://ag.hawaii.gov/hcjdc/">Hawaii Crimi
 <h4 data-number="5.4.2" class="anchored" data-anchor-id="version-control-github"><span class="header-section-number">5.4.2</span> Version control: Github</h4>
 <p><em>Under construction!</em></p>
 </section>
-<section id="for-communication-slack" class="level4" data-number="5.4.3">
-<h4 data-number="5.4.3" class="anchored" data-anchor-id="for-communication-slack"><span class="header-section-number">5.4.3</span> For communication: Slack</h4>
-<p><em>Under construction!</em></p>
+<section id="for-communication-zulip" class="level4" data-number="5.4.3">
+<h4 data-number="5.4.3" class="anchored" data-anchor-id="for-communication-zulip"><span class="header-section-number">5.4.3</span> For communication: Zulip</h4>
+<p>We use <a href="https://hawaiijudiciary.zulipchat.com">Zulip</a>. If you haven’t already received an invite, please remind the division head.</p>
 </section>
 </section>
 <section id="policies" class="level3" data-number="5.5">
@@ -798,6 +841,7 @@ Expand to view justice research resources
 <li><a href="https://www.vera.org/">Vera Institute</a> - conducts data analysis and research on criminal justice system</li>
 <li><a href="https://cepp.com/">Center for Effective Public Policy</a> - focuses on pretrial policy and research</li>
 <li><a href="https://www.evidencebasedpolicy.org/">Coalition for Evidence-based Policy</a> - focuses on evidence-based initiatives broadly, including the justice system</li>
+<li><a href="https://nospin.evidencebasedpolicy.org/">The No-Spin Evidence Review by CEBP</a></li>
 <li><a href="https://www.rand.org/topics/courts.html">RAND</a> - think tank and research institute</li>
 <li><a href="https://www.pewtrusts.org/en/">Pew Charitable Trusts</a> - conducts research and polling</li>
 <li><a href="https://results4america.org/">Results for America</a></li>
@@ -1155,7 +1199,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":true,"selector":".lightbox","descPosition":"bottom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom","openEffect":"zoom"});</script>
 <script>videojs(video_shortcode_videojs_video1);</script>
 <script>videojs(video_shortcode_videojs_video2);</script>
 <script>videojs(video_shortcode_videojs_video3);</script>
